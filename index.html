@@ -179,6 +179,40 @@
       border-radius: 50%; /* Pour un effet circulaire, optionnel */
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
+
+    /* Mise en page pro sur desktop uniquement */
+    @media (min-width: 1024px) {
+      #app-container {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        padding: 3rem;
+      }
+
+      /* Colonne gauche : titre + intro + photo/citation */
+      h1,
+      p:first-of-type,
+      #quote-container {
+        grid-column: 1;
+      }
+
+      /* Colonne droite : sélecteurs + zone du quiz */
+      .selector-container,
+      #quiz-area {
+        grid-column: 2;
+      }
+
+      /* Légers ajustements de confort sur desktop */
+      #question {
+        font-size: 1.35rem;
+      }
+      .answer-btn {
+        font-size: 1.05rem;
+        padding: 1.1rem;
+      }
+    }
   </style>
 </head>
 <body>
