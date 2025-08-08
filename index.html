@@ -379,12 +379,20 @@
     }
 
     function handleWeekChange() {
+      // Supprime le message de fin s'il existe
+      const oldEndMsg = document.getElementById('end-message');
+      if (oldEndMsg) oldEndMsg.remove();
+
       const selectedWeek = weekSelector.value;
       const weekData = allData[selectedWeek];
       populateDaySelector(weekData);
     }
 
     function handleDayChange() {
+      // Supprime le message de fin s'il existe
+      const oldEndMsg = document.getElementById('end-message');
+      if (oldEndMsg) oldEndMsg.remove();
+
       const selectedWeek = weekSelector.value;
       const selectedDay = daySelector.value;
 
