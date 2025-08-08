@@ -173,6 +173,7 @@
       <div id="question"></div>
       <div id="answer-buttons"></div>
       <div id="feedback"></div>
+      <p id="score">Score : 0</p>  <!-- Nouvel élément pour afficher le score -->
       <button id="next-btn">Question suivante</button>
     </div>
   </div>
@@ -185,11 +186,13 @@
     const answerButtonsElement = document.getElementById('answer-buttons');
     const feedbackElement = document.getElementById('feedback');
     const nextButton = document.getElementById('next-btn');
+    const scoreElement = document.getElementById('score');  // Nouvel élément pour le score
 
     let allData = {};
     let currentQuestions = [];
     let availableQuestions = [];
     let currentQuestionIndex;
+    let score = 0;  // Nouvelle variable pour le score
 
     async function loadQuestions() {
       try {
@@ -251,7 +254,7 @@
       }
     }
 
-    // Nouvelle fonction : Mélanger un tableau (Fisher–Yates)
+    // Mélange générique (Fisher–Yates)
     function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -267,6 +270,7 @@
         answerButtonsElement.innerHTML = '';
         feedbackElement.innerText = '';
         nextButton.style.display = 'none';
+        scoreElement.innerText = 'Score : 0';  // Réinitialise l'affichage du score
         return;
       }
 
@@ -274,6 +278,8 @@
       availableQuestions = [...currentQuestions];
       feedbackElement.innerText = '';
       nextButton.innerText = "Question suivante";
+      score = 0;  // Réinitialise le score
+      scoreElement.innerText = 'Score : ' + score;  // Affiche le score initial
       showNextQuestion();
     }
 
@@ -325,6 +331,11 @@
 
       feedbackElement.innerText = correct ? "Bonne réponse !" : "Mauvaise réponse.";
       nextButton.style.display = 'block';
+
+      if (correct) {
+        score++;  // Incrémente le score si la réponse est correcte
+        scoreElement.innerText = 'Score : ' + score;  // Met à jour l'affichage
+      }
 
       availableQuestions.splice(currentQuestionIndex, 1);
     }
