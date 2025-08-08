@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - Viens et suis-moi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #005A94;
+      --secondary-color: #F9FAFB;
+      --card-color: #ffffff;
+      --accent-color: #D8EAFB;
+      --text-color: #1F2937;
+      --success-color: #10B981;
+      --danger-color: #EF4444;
+      --border-radius: 12px;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Lato', sans-serif; background-color: var(--secondary-color); color: var(--text-color); display: flex; justify-content: center; align-items: start; padding: 2rem 1rem; min-height: 100vh; }
+    #app-container { background-color: var(--card-color); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow); max-width: 700px; width: 100%; }
+    h1 { color: var(--primary-color); font-size: 1.75rem; margin-bottom: 0.5rem; }
+    p, label { font-size: 1rem; }
+    blockquote { background-color: var(--accent-color); padding: 1rem; border-left: 4px solid var(--primary-color); margin: 1rem 0; font-style: italic; border-radius: var(--border-radius); }
+    .selector-container { margin-top: 1.5rem; }
+    select { width: 100%; padding: 0.75rem; font-size: 1rem; border-radius: var(--border-radius); border: 1px solid #ccc; background-color: #fff; }
+    #quiz-area { margin-top: 2rem; }
+    #quiz-area.hidden { display: none; }
+    #question { font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem; }
+    .answer-btn { display: block; width: 100%; padding: 1rem; margin-bottom: 0.75rem; font-size: 1rem; border-radius: var(--border-radius); border: 2px solid transparent; background-color: #f3f4f6; cursor: pointer; transition: background-color 0.3s, border-color 0.3s; }
+    .answer-btn:hover:not(:disabled) { background-color: #e5e7eb; border-color: var(--primary-color); }
+    .answer-btn.correct { background-color: #dcfce7; border-color: var(--success-color); color: var(--success-color); font-weight: bold; }
+    .answer-btn.incorrect { background-color: #fee2e2; border-color: var(--danger-color); color: var(--danger-color); font-weight: bold; }
+    #next-btn, #retry-btn { display: none; padding: 0.75rem 1.5rem; font-size: 1rem; background-color: var(--primary-color); color: #fff; border: none; border-radius: var(--border-radius); cursor: pointer; margin-top: 1rem; transition: background-color 0.3s; }
+    #next-btn:hover, #retry-btn:hover { background-color: #004374; }
+    #feedback { margin-top: 1rem; font-weight: bold; font-size: 1.1rem; }
+    #score { margin-top: 1rem; font-weight: bold; font-size: 1.2rem; }
+    canvas.confetti { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 999; }
+  </style>
+</head>
+<body>
+  <div id="app-container">
+    <h1>Bienvenue au Quiz "Viens et suis-moi"</h1>
+    <p>Cette année nous sommes invités à étudier doctrine et alliances. J'espère que ces quiz vous aideront à approfondir les principes et la doctrine étudiés chaque semaine. Les quiz seront mis à jour chaque semaine. Bon courage à tous !</p>
+    <blockquote>"Je vous promets que si vous vous faites les délices des paroles du Christ chaque jour, mois après mois, les paroles du Christ vous diront tout ce que vous devez faire."<br /><strong>- Président Russell M. Nelson</strong></blockquote>
+    <div class="selector-container"><label for="week-selector">Semaine d'étude :</label><select id="week-selector"></select></div>
+    <div class="selector-container"><label for="day-selector">Jour :</label><select id="day-selector"></select></div>
+    <div id="quiz-area" class="hidden">
+      <div id="question"></div>
+      <div id="answer-buttons"></div>
+      <div id="feedback"></div>
+      <button id="next-btn">Question suivante</button>
+      <button id="retry-btn">Rejouer ce jour</button>
+      <div id="score"></div>
+    </div>
+  </div>
+  <canvas class="confetti"></canvas>
+  <script>
+    const weekSelector = document.getElementById('week-selector');
+    const daySelector = document.getElementById('day-selector');
+    const quizArea = document.getElementById('quiz-area');
+    const questionElement = document.getElementById('question');
+    const answerButtonsElement = document.getElementById('answer-buttons');
+    const feedbackElement = document.getElementById('feedback');
+    const nextButton = document.getElementById('next-btn');
+    const retryButton = document.getElementById('retry-btn');
+    const scoreElement = document.getElementById('score');
+    const confettiCanvas = document.querySelector('.confetti');
+    let allData = {}, currentQuestions = [], availableQuestions = [], currentQuestionIndex, score = 0, totalQuestions = 0;
+    const shuffle = arr => arr.sort(() => Math.random() - 0.5);
+    async function loadQuestions(){const res = await fetch('./questions.json'); allData = await res.json(); populateWeekSelector(); handleWeekChange();}
+    function populateWeekSelector(){weekSelector.innerHTML='';Object.keys(allData).forEach(week=>{let o=document.createElement('option');o.value=week;o.innerText=week;weekSelector.appendChild(o);});}
+    function populateDaySelector(weekData){daySelector.innerHTML='';Object.keys(weekData).forEach(day=>{if(weekData[day].length>0){let o=document.createElement('option');o.value=day;o.innerText=day.charAt(0).toUpperCase()+day.slice(1);daySelector.appendChild(o);}});if(daySelector.options.length>0)handleDayChange();}
+    function handleWeekChange(){populateDaySelector(allData[weekSelector.value]);}
+    function handleDayChange(){currentQuestions=allData[weekSelector.value][daySelector.value];startQuiz();}
+    function startQuiz(){score=0;scoreElement.innerText='';totalQuestions=currentQuestions.length;availableQuestions=shuffle([...currentQuestions]);showNextQuestion();}
+    function showNextQuestion(){if(availableQuestions.length===0){questionElement.innerText='Quiz terminé !';answerButtonsElement.innerHTML='';feedbackElement.innerText='';scoreElement.innerText=`Votre score final : ${score}/${totalQuestions}`;launchConfetti();nextButton.style.display='none';retryButton.style.display='inline-block';return;}retryButton.style.display='none';feedbackElement.innerText='';nextButton.style.display='none';currentQuestionIndex=0;showQuestion(availableQuestions[currentQuestionIndex]);}
+    function showQuestion(question){questionElement.innerText=question.question;answerButtonsElement.innerHTML='';shuffle(question.answers).forEach(ans=>{const btn=document.createElement('button');btn.innerText=ans.text;btn.classList.add('answer-btn');if(ans.correct)btn.dataset.correct='true';btn.addEventListener('click',selectAnswer);answerButtonsElement.appendChild(btn);});}
+    function selectAnswer(e){if(e.target.dataset.correct==='true')score++;Array.from(answerButtonsElement.children).forEach(b=>{b.disabled=true;b.classList.add(b.dataset.correct==='true'?'correct':'incorrect');});nextButton.style.display='inline-block';availableQuestions.splice(currentQuestionIndex,1);}
+    function launchConfetti(){const ctx=confettiCanvas.getContext('2d');confettiCanvas.width=window.innerWidth;confettiCanvas.height=window.innerHeight;const pieces=Array.from({length:150},()=>({x:Math.random()*confettiCanvas.width,y:Math.random()*confettiCanvas.height-confettiCanvas.height,size:Math.random()*6+4,color:`hsl(${Math.random()*360},100%,50%)`,speed:Math.random()*3+2}));function update(){ctx.clearRect(0,0,confettiCanvas.width,confettiCanvas.height);pieces.forEach(p=>{p.y+=p.speed;if(p.y>confettiCanvas.height)p.y=-10;ctx.fillStyle=p.color;ctx.fillRect(p.x,p.y,p.size,p.size);});requestAnimationFrame(update);}update();setTimeout(()=>ctx.clearRect(0,0,confettiCanvas.width,confettiCanvas.height),5000);}
+    nextButton.addEventListener('click',showNextQuestion);
+    retryButton.addEventListener('click',startQuiz);
+    weekSelector.addEventListener('change',handleWeekChange);
+    daySelector.addEventListener('change',handleDayChange);
+    loadQuestions();
+  </script>
+</body>
+</html>
