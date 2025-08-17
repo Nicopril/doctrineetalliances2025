@@ -140,29 +140,65 @@
       background-color: #004374;
     }
 
-    /* Nouveau style pour le bouton partager */
-    #share-btn {
+    /* Styles pour les boutons de partage */
+    .share-buttons {
       display: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      background-color: #25D366;
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .share-buttons h3 {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .share-btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .share-btn {
+      padding: 0.75rem;
+      font-size: 0.9rem;
+      font-weight: 600;
       color: #fff;
       border: none;
       border-radius: var(--border-radius);
       cursor: pointer;
-      margin-top: 1rem;
-      margin-left: 1rem;
-      transition: background-color 0.3s;
+      transition: transform 0.2s, opacity 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
     }
 
-    #share-btn:hover {
-      background-color: #1DA851;
+    .share-btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .share-whatsapp {
+      background-color: #25D366;
+    }
+
+    .share-twitter {
+      background-color: #1DA1F2;
+    }
+
+    .share-telegram {
+      background-color: #0088CC;
+    }
+
+    .share-copy {
+      background-color: #6B7280;
     }
 
     .button-container {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+      justify-content: center;
       margin-top: 1rem;
     }
 
@@ -295,15 +331,15 @@
         text-align: center;
       }
 
-      .button-container {
-        justify-content: center;
-        margin-top: 2rem;
-      }
-
-      #next-btn, #share-btn {
+      #next-btn {
         font-size: 1.1rem;
         padding: 1rem 2rem;
-        margin: 0;
+      }
+
+      .share-btn-grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 600px;
+        margin: 0 auto 1rem auto;
       }
 
       #end-message {
@@ -348,7 +384,24 @@
       <p id="score">Score : 0</p>
       <div class="button-container">
         <button id="next-btn">Question suivante</button>
-        <button id="share-btn">📱 Partager mon score</button>
+      </div>
+      
+      <div class="share-buttons" id="share-buttons">
+        <h3>📱 Partager mon résultat</h3>
+        <div class="share-btn-grid">
+          <button class="share-btn share-whatsapp" id="share-whatsapp">
+            💬 WhatsApp
+          </button>
+          <button class="share-btn share-twitter" id="share-twitter">
+            🐦 Twitter
+          </button>
+          <button class="share-btn share-telegram" id="share-telegram">
+            ✈️ Telegram
+          </button>
+          <button class="share-btn share-copy" id="share-copy">
+            📋 Copier
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -361,7 +414,7 @@
     const answerButtonsElement = document.getElementById('answer-buttons');
     const feedbackElement = document.getElementById('feedback');
     const nextButton = document.getElementById('next-btn');
-    const shareButton = document.getElementById('share-btn');
+    const shareButtons = document.getElementById('share-buttons');
     const scoreElement = document.getElementById('score');
 
     let allData = {};
@@ -464,7 +517,7 @@
         answerButtonsElement.innerHTML = '';
         feedbackElement.innerText = '';
         nextButton.style.display = 'none';
-        shareButton.style.display = 'none';
+        shareButtons.style.display = 'none';
         return;
       }
 
@@ -473,7 +526,7 @@
       feedbackElement.innerText = '';
       nextButton.innerText = "Question suivante";
       nextButton.style.display = 'none';
-      shareButton.style.display = 'none';
+      shareButtons.style.display = 'none';
       score = 0;
       scoreElement.innerText = 'Score : ' + score;
       showNextQuestion();
@@ -486,7 +539,7 @@
         nextButton.innerText = "Recommencer";
         nextButton.onclick = startQuiz;
         nextButton.style.display = 'block';
-        shareButton.style.display = 'block';
+        shareButtons.style.display = 'block';
 
         // Message animé avec le score final et encouragements personnalisés
         const endMessage = document.createElement('p');
@@ -510,7 +563,7 @@
       } else {
         nextButton.onclick = showNextQuestion;
         nextButton.style.display = 'none';
-        shareButton.style.display = 'none';
+        shareButtons.style.display = 'none';
         currentQuestionIndex = Math.floor(Math.random() * availableQuestions.length);
         showQuestion(availableQuestions[currentQuestionIndex]);
       }
@@ -521,7 +574,7 @@
       answerButtonsElement.innerHTML = '';
       feedbackElement.innerText = '';
       nextButton.style.display = 'none';
-      shareButton.style.display = 'none';
+      shareButtons.style.display = 'none';
 
       const shuffledAnswers = shuffle([...question.answers]);
 
@@ -559,8 +612,8 @@
       availableQuestions.splice(currentQuestionIndex, 1);
     }
 
-    // Fonction pour partager le score
-    function shareScore() {
+    // Génère le texte de partage
+    function generateShareText() {
       const selectedWeek = weekSelector.value;
       const selectedDay = daySelector.value;
       const totalQuestions = currentQuestions.length;
@@ -573,40 +626,53 @@
         shareText += `🎉 Score parfait ! Je maîtrise cette semaine !\n\n`;
       } else if (score >= totalQuestions - 1) {
         shareText += `👏 Presque parfait ! Très bon résultat !\n\n`;
-      } else {
+      } else if (score >= totalQuestions / 2) {
         shareText += `💪 Bon travail ! Je continue mes efforts !\n\n`;
+      } else {
+        shareText += `📚 En progression dans mon étude !\n\n`;
       }
       
       shareText += `Rejoignez-moi dans l'étude de Doctrine et Alliances ! 📚`;
+      return shareText;
+    }
 
-      // Essaie d'utiliser l'API Web Share si disponible (mobile)
-      if (navigator.share) {
-        navigator.share({
-          title: 'Mon score au Quiz "Viens et suis-moi"',
-          text: shareText,
-        }).catch(err => {
-          console.log('Erreur lors du partage:', err);
-          fallbackShare(shareText);
-        });
-      } else {
-        // Sinon, utilise la méthode de fallback
-        fallbackShare(shareText);
+    // Boutons de partage spécifiques
+    document.getElementById('share-whatsapp').addEventListener('click', () => {
+      const text = generateShareText();
+      const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    });
+
+    document.getElementById('share-twitter').addEventListener('click', () => {
+      const text = generateShareText();
+      const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    });
+
+    document.getElementById('share-telegram').addEventListener('click', () => {
+      const text = generateShareText();
+      const url = `https://t.me/share/url?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    });
+
+    document.getElementById('share-copy').addEventListener('click', async () => {
+      const text = generateShareText();
+      try {
+        await navigator.clipboard.writeText(text);
+        const button = document.getElementById('share-copy');
+        const originalText = button.innerHTML;
+        button.innerHTML = '✅ Copié !';
+        button.style.backgroundColor = '#10B981';
+        setTimeout(() => {
+          button.innerHTML = originalText;
+          button.style.backgroundColor = '#6B7280';
+        }, 2000);
+      } catch (err) {
+        alert('Impossible de copier automatiquement. Veuillez sélectionner et copier le texte manuellement.');
+        prompt('Copiez ce texte:', text);
       }
-    }
+    });
 
-    // Méthode de fallback pour les navigateurs desktop
-    function fallbackShare(text) {
-      // Copie le texte dans le presse-papiers
-      navigator.clipboard.writeText(text).then(() => {
-        alert('📋 Votre score a été copié dans le presse-papiers !\nVous pouvez le coller dans vos messages.');
-      }).catch(() => {
-        // Si la copie échoue, ouvre WhatsApp Web
-        const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
-        window.open(whatsappUrl, '_blank');
-      });
-    }
-
-    shareButton.addEventListener('click', shareScore);
     weekSelector.addEventListener('change', handleWeekChange);
     daySelector.addEventListener('change', handleDayChange);
     loadQuestions();
