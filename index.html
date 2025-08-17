@@ -202,6 +202,46 @@
       margin-top: 1rem;
     }
 
+    /* Style pour les liens d'approfondissement */
+    .study-links {
+      background-color: rgba(216, 234, 251, 0.3);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .study-links h4 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .study-link {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--border-radius);
+      margin: 0.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .study-link:hover {
+      background-color: #004374;
+      transform: translateY(-1px);
+    }
+
+    .study-link.youtube {
+      background-color: #FF0000;
+    }
+
+    .study-link.youtube:hover {
+      background-color: #CC0000;
+    }
+
     #feedback {
       margin-top: 1rem;
       font-weight: bold;
@@ -480,6 +520,8 @@
       // Supprime le message de fin s'il existe
       const oldEndMsg = document.getElementById('end-message');
       if (oldEndMsg) oldEndMsg.remove();
+      const oldStudyLinks = document.getElementById('study-links');
+      if (oldStudyLinks) oldStudyLinks.remove();
 
       const selectedWeek = weekSelector.value;
       const weekData = allData[selectedWeek];
@@ -490,6 +532,8 @@
       // Supprime le message de fin s'il existe
       const oldEndMsg = document.getElementById('end-message');
       if (oldEndMsg) oldEndMsg.remove();
+      const oldStudyLinks = document.getElementById('study-links');
+      if (oldStudyLinks) oldStudyLinks.remove();
 
       const selectedWeek = weekSelector.value;
       const selectedDay = daySelector.value;
@@ -559,6 +603,21 @@
 
         endMessage.innerHTML = `Vous avez obtenu <strong>${score} bonne${score > 1 ? 's' : ''} réponse${score > 1 ? 's' : ''}</strong> sur ${totalQuestions}.<br/><br/>${encouragement}<br/><br/>À demain pour de nouvelles découvertes !`;
         quizArea.appendChild(endMessage);
+
+        // Ajout des liens d'approfondissement
+        const studyLinks = document.createElement('div');
+        studyLinks.id = 'study-links';
+        studyLinks.className = 'study-links';
+        studyLinks.innerHTML = `
+          <h4>📚 Pour approfondir votre étude :</h4>
+          <a href="https://www.youtube.com/@ecouteetpreteloreille4331" target="_blank" class="study-link youtube">
+            🎥 Chaîne YouTube d'approfondissement
+          </a>
+          <a href="https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-doctrine-and-covenants-2025?lang=fra" target="_blank" class="study-link">
+            📖 Manuel "Viens et suis-moi" 2025
+          </a>
+        `;
+        quizArea.appendChild(studyLinks);
 
       } else {
         nextButton.onclick = showNextQuestion;
@@ -632,7 +691,9 @@
         shareText += `📚 En progression dans mon étude !\n\n`;
       }
       
-      shareText += `Rejoignez-moi dans l'étude de Doctrine et Alliances ! 📚`;
+      shareText += `Rejoignez-moi dans l'étude de Doctrine et Alliances !\n\n`;
+      shareText += `🎥 Approfondissement: https://www.youtube.com/@ecouteetpreteloreille4331\n`;
+      shareText += `📖 Manuel officiel: https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-doctrine-and-covenants-2025?lang=fra`;
       return shareText;
     }
 
