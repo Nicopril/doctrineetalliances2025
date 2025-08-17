@@ -342,7 +342,18 @@
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         allData = await response.json();
         populateWeekSelector();
-        weekSelector.selectedIndex = 0;
+        
+        // Sélectionne automatiquement la semaine actuelle (18-24 août)
+        const currentWeek = "18–24 août | D&A 89–92";
+        const weekKeys = Object.keys(allData);
+        const currentWeekIndex = weekKeys.indexOf(currentWeek);
+        
+        if (currentWeekIndex !== -1) {
+          weekSelector.selectedIndex = currentWeekIndex;
+        } else {
+          weekSelector.selectedIndex = 0; // Si pas trouvé, prendre la première
+        }
+        
         handleWeekChange();
       } catch (error) {
         console.error("Erreur lors du chargement du fichier de questions:", error);
