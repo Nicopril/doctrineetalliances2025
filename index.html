@@ -140,6 +140,32 @@
       background-color: #004374;
     }
 
+    /* Nouveau style pour le bouton partager */
+    #share-btn {
+      display: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #25D366;
+      color: #fff;
+      border: none;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    #share-btn:hover {
+      background-color: #1DA851;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
     #feedback {
       margin-top: 1rem;
       font-weight: bold;
@@ -269,11 +295,15 @@
         text-align: center;
       }
 
-      #next-btn {
+      .button-container {
+        justify-content: center;
+        margin-top: 2rem;
+      }
+
+      #next-btn, #share-btn {
         font-size: 1.1rem;
         padding: 1rem 2rem;
-        margin: 2rem auto 0;
-        display: block;
+        margin: 0;
       }
 
       #end-message {
@@ -316,7 +346,10 @@
       <div id="answer-buttons"></div>
       <div id="feedback"></div>
       <p id="score">Score : 0</p>
-      <button id="next-btn">Question suivante</button>
+      <div class="button-container">
+        <button id="next-btn">Question suivante</button>
+        <button id="share-btn">📱 Partager mon score</button>
+      </div>
     </div>
   </div>
 
@@ -328,6 +361,7 @@
     const answerButtonsElement = document.getElementById('answer-buttons');
     const feedbackElement = document.getElementById('feedback');
     const nextButton = document.getElementById('next-btn');
+    const shareButton = document.getElementById('share-btn');
     const scoreElement = document.getElementById('score');
 
     let allData = {};
@@ -430,6 +464,7 @@
         answerButtonsElement.innerHTML = '';
         feedbackElement.innerText = '';
         nextButton.style.display = 'none';
+        shareButton.style.display = 'none';
         return;
       }
 
@@ -437,6 +472,8 @@
       availableQuestions = [...currentQuestions];
       feedbackElement.innerText = '';
       nextButton.innerText = "Question suivante";
+      nextButton.style.display = 'none';
+      shareButton.style.display = 'none';
       score = 0;
       scoreElement.innerText = 'Score : ' + score;
       showNextQuestion();
@@ -449,16 +486,31 @@
         nextButton.innerText = "Recommencer";
         nextButton.onclick = startQuiz;
         nextButton.style.display = 'block';
+        shareButton.style.display = 'block';
 
-        // Ajout du message animé avec le score final
+        // Message animé avec le score final et encouragements personnalisés
         const endMessage = document.createElement('p');
         endMessage.id = 'end-message';
         const totalQuestions = currentQuestions.length;
-        endMessage.innerHTML = `Vous avez obtenu <strong>${score} bonne${score > 1 ? 's' : ''} réponse${score > 1 ? 's' : ''}</strong> sur ${totalQuestions}<br/>À demain pour de nouvelles découvertes !`;
+        let encouragement = "";
+
+        if (score === totalQuestions) {
+          encouragement = "🎉 Parfait ! Vous maîtrisez cette semaine ! 🎉";
+        } else if (score >= totalQuestions - 1) {
+          encouragement = "👏 Très bien ! Presque parfait ! 👏";
+        } else if (score >= totalQuestions / 2) {
+          encouragement = "💪 Bon travail, continuez vos efforts ! 💪";
+        } else {
+          encouragement = "📖 Prenez le temps de relire cette semaine. 📖";
+        }
+
+        endMessage.innerHTML = `Vous avez obtenu <strong>${score} bonne${score > 1 ? 's' : ''} réponse${score > 1 ? 's' : ''}</strong> sur ${totalQuestions}.<br/><br/>${encouragement}<br/><br/>À demain pour de nouvelles découvertes !`;
         quizArea.appendChild(endMessage);
 
       } else {
         nextButton.onclick = showNextQuestion;
+        nextButton.style.display = 'none';
+        shareButton.style.display = 'none';
         currentQuestionIndex = Math.floor(Math.random() * availableQuestions.length);
         showQuestion(availableQuestions[currentQuestionIndex]);
       }
@@ -469,6 +521,7 @@
       answerButtonsElement.innerHTML = '';
       feedbackElement.innerText = '';
       nextButton.style.display = 'none';
+      shareButton.style.display = 'none';
 
       const shuffledAnswers = shuffle([...question.answers]);
 
@@ -506,6 +559,54 @@
       availableQuestions.splice(currentQuestionIndex, 1);
     }
 
+    // Fonction pour partager le score
+    function shareScore() {
+      const selectedWeek = weekSelector.value;
+      const selectedDay = daySelector.value;
+      const totalQuestions = currentQuestions.length;
+      
+      let shareText = `🎯 Quiz "Viens et suis-moi" terminé !\n\n`;
+      shareText += `📖 ${selectedWeek} - ${selectedDay.charAt(0).toUpperCase() + selectedDay.slice(1)}\n`;
+      shareText += `✅ Score: ${score}/${totalQuestions}\n\n`;
+      
+      if (score === totalQuestions) {
+        shareText += `🎉 Score parfait ! Je maîtrise cette semaine !\n\n`;
+      } else if (score >= totalQuestions - 1) {
+        shareText += `👏 Presque parfait ! Très bon résultat !\n\n`;
+      } else {
+        shareText += `💪 Bon travail ! Je continue mes efforts !\n\n`;
+      }
+      
+      shareText += `Rejoignez-moi dans l'étude de Doctrine et Alliances ! 📚`;
+
+      // Essaie d'utiliser l'API Web Share si disponible (mobile)
+      if (navigator.share) {
+        navigator.share({
+          title: 'Mon score au Quiz "Viens et suis-moi"',
+          text: shareText,
+        }).catch(err => {
+          console.log('Erreur lors du partage:', err);
+          fallbackShare(shareText);
+        });
+      } else {
+        // Sinon, utilise la méthode de fallback
+        fallbackShare(shareText);
+      }
+    }
+
+    // Méthode de fallback pour les navigateurs desktop
+    function fallbackShare(text) {
+      // Copie le texte dans le presse-papiers
+      navigator.clipboard.writeText(text).then(() => {
+        alert('📋 Votre score a été copié dans le presse-papiers !\nVous pouvez le coller dans vos messages.');
+      }).catch(() => {
+        // Si la copie échoue, ouvre WhatsApp Web
+        const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
+        window.open(whatsappUrl, '_blank');
+      });
+    }
+
+    shareButton.addEventListener('click', shareScore);
     weekSelector.addEventListener('change', handleWeekChange);
     daySelector.addEventListener('change', handleDayChange);
     loadQuestions();
