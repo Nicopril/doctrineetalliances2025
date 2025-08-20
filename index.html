@@ -77,6 +77,142 @@
       background-color: #fff;
     }
 
+    /* Nouveau: Bouton Statistiques */
+    .stats-toggle {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .stats-btn {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .stats-btn:hover {
+      background-color: #004374;
+    }
+
+    /* Nouveau: Section Statistiques */
+    .stats-section {
+      display: none;
+      background-color: rgba(216, 234, 251, 0.3);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .stats-section h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .stats-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .stat-card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: #6B7280;
+      margin-top: 0.25rem;
+    }
+
+    /* Graphique simple */
+    .chart-container {
+      background-color: white;
+      border-radius: var(--border-radius);
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    .chart-title {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    .chart {
+      display: flex;
+      align-items: end;
+      height: 200px;
+      gap: 8px;
+      padding: 0 1rem;
+      border-bottom: 2px solid #E5E7EB;
+      border-left: 2px solid #E5E7EB;
+    }
+
+    .bar {
+      background: linear-gradient(to top, var(--primary-color), var(--accent-color));
+      border-radius: 4px 4px 0 0;
+      min-width: 30px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .bar:hover {
+      transform: scale(1.05);
+    }
+
+    .bar-label {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+
+    .bar-value {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    .clear-stats {
+      background-color: #EF4444;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      float: right;
+    }
+
+    .clear-stats:hover {
+      background-color: #DC2626;
+    }
+
     #quiz-area {
       margin-top: 2rem;
     }
@@ -382,6 +518,10 @@
         margin: 0 auto 1rem auto;
       }
 
+      .stats-summary {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
       #end-message {
         font-size: 1.3rem;
         text-align: center;
@@ -405,6 +545,44 @@
         les paroles du Christ vous diront tout ce que vous devez faire."<br />
         <strong>- Président Russell M. Nelson</strong>
       </blockquote>
+    </div>
+
+    <!-- Nouveau: Bouton pour afficher/masquer les statistiques -->
+    <div class="stats-toggle">
+      <button class="stats-btn" id="stats-toggle-btn">📊 Voir mes statistiques</button>
+    </div>
+
+    <!-- Nouveau: Section Statistiques -->
+    <div class="stats-section" id="stats-section">
+      <h3>📊 Mes Statistiques</h3>
+      
+      <div class="stats-summary" id="stats-summary">
+        <div class="stat-card">
+          <div class="stat-number" id="total-quizzes">0</div>
+          <div class="stat-label">Quiz terminés</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="average-score">0%</div>
+          <div class="stat-label">Score moyen</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="best-score">0%</div>
+          <div class="stat-label">Meilleur score</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="perfect-scores">0</div>
+          <div class="stat-label">Scores parfaits</div>
+        </div>
+      </div>
+
+      <div class="chart-container">
+        <div class="chart-title">Évolution des 10 derniers scores</div>
+        <div class="chart" id="score-chart">
+          <div style="text-align: center; color: #6B7280; margin: auto;">Aucune donnée encore disponible</div>
+        </div>
+      </div>
+
+      <button class="clear-stats" id="clear-stats-btn">🗑️ Effacer mes statistiques</button>
     </div>
 
     <div class="selector-container">
@@ -457,11 +635,156 @@
     const shareButtons = document.getElementById('share-buttons');
     const scoreElement = document.getElementById('score');
 
+    // Nouveaux éléments pour les statistiques
+    const statsToggleBtn = document.getElementById('stats-toggle-btn');
+    const statsSection = document.getElementById('stats-section');
+    const clearStatsBtn = document.getElementById('clear-stats-btn');
+
     let allData = {};
     let currentQuestions = [];
     let availableQuestions = [];
     let currentQuestionIndex;
     let score = 0;
+
+    // Nouveau: Gestion des statistiques
+    let stats = {
+      history: [], // [{date, week, day, score, total, percentage}]
+      totalQuizzes: 0,
+      averageScore: 0,
+      bestScore: 0,
+      perfectScores: 0
+    };
+
+    // Charger les statistiques du localStorage
+    function loadStats() {
+      const savedStats = localStorage.getItem('quiz-stats');
+      if (savedStats) {
+        stats = JSON.parse(savedStats);
+      }
+      updateStatsDisplay();
+    }
+
+    // Sauvegarder les statistiques
+    function saveStats() {
+      localStorage.setItem('quiz-stats', JSON.stringify(stats));
+    }
+
+    // Ajouter un nouveau score aux statistiques
+    function addScore(week, day, score, total) {
+      const percentage = Math.round((score / total) * 100);
+      const date = new Date().toLocaleDateString('fr-FR');
+      
+      // Ajouter à l'historique
+      stats.history.push({
+        date,
+        week: week.split(' | ')[0], // Garder seulement les dates
+        day,
+        score,
+        total,
+        percentage
+      });
+
+      // Garder seulement les 50 derniers scores
+      if (stats.history.length > 50) {
+        stats.history = stats.history.slice(-50);
+      }
+
+      // Calculer les nouvelles statistiques
+      stats.totalQuizzes = stats.history.length;
+      stats.averageScore = Math.round(stats.history.reduce((sum, item) => sum + item.percentage, 0) / stats.totalQuizzes);
+      stats.bestScore = Math.max(...stats.history.map(item => item.percentage));
+      stats.perfectScores = stats.history.filter(item => item.percentage === 100).length;
+
+      saveStats();
+      updateStatsDisplay();
+    }
+
+    // Mettre à jour l'affichage des statistiques
+    function updateStatsDisplay() {
+      document.getElementById('total-quizzes').textContent = stats.totalQuizzes;
+      document.getElementById('average-score').textContent = stats.averageScore + '%';
+      document.getElementById('best-score').textContent = stats.bestScore + '%';
+      document.getElementById('perfect-scores').textContent = stats.perfectScores;
+
+      updateChart();
+    }
+
+    // Créer le graphique
+    function updateChart() {
+      const chartContainer = document.getElementById('score-chart');
+      
+      if (stats.history.length === 0) {
+        chartContainer.innerHTML = '<div style="text-align: center; color: #6B7280; margin: auto;">Aucune donnée encore disponible</div>';
+        return;
+      }
+
+      // Prendre les 10 derniers scores
+      const recentScores = stats.history.slice(-10);
+      
+      chartContainer.innerHTML = '';
+      
+      recentScores.forEach((item, index) => {
+        const bar = document.createElement('div');
+        bar.className = 'bar';
+        bar.style.height = `${(item.percentage / 100) * 180}px`;
+        
+        // Couleur selon le score
+        if (item.percentage === 100) {
+          bar.style.background = 'linear-gradient(to top, #10B981, #6EE7B7)';
+        } else if (item.percentage >= 75) {
+          bar.style.background = 'linear-gradient(to top, #3B82F6, #93C5FD)';
+        } else if (item.percentage >= 50) {
+          bar.style.background = 'linear-gradient(to top, #F59E0B, #FCD34D)';
+        } else {
+          bar.style.background = 'linear-gradient(to top, #EF4444, #FCA5A5)';
+        }
+
+        // Label avec la date
+        const label = document.createElement('div');
+        label.className = 'bar-label';
+        label.textContent = item.date.split('/').slice(0,2).join('/'); // DD/MM
+        bar.appendChild(label);
+
+        // Valeur du score
+        const value = document.createElement('div');
+        value.className = 'bar-value';
+        value.textContent = item.percentage + '%';
+        bar.appendChild(value);
+
+        // Tooltip au survol
+        bar.title = `${item.date}: ${item.score}/${item.total} (${item.percentage}%) - ${item.week} ${item.day}`;
+
+        chartContainer.appendChild(bar);
+      });
+    }
+
+    // Toggle affichage des statistiques
+    statsToggleBtn.addEventListener('click', () => {
+      const isVisible = statsSection.style.display !== 'none';
+      if (isVisible) {
+        statsSection.style.display = 'none';
+        statsToggleBtn.textContent = '📊 Voir mes statistiques';
+      } else {
+        statsSection.style.display = 'block';
+        statsToggleBtn.textContent = '📊 Masquer les statistiques';
+        updateStatsDisplay();
+      }
+    });
+
+    // Effacer les statistiques
+    clearStatsBtn.addEventListener('click', () => {
+      if (confirm('Êtes-vous sûr de vouloir effacer toutes vos statistiques ? Cette action est irréversible.')) {
+        stats = {
+          history: [],
+          totalQuizzes: 0,
+          averageScore: 0,
+          bestScore: 0,
+          perfectScores: 0
+        };
+        saveStats();
+        updateStatsDisplay();
+      }
+    });
 
     async function loadQuestions() {
       try {
@@ -482,6 +805,9 @@
         }
         
         handleWeekChange();
+        
+        // Charger les statistiques
+        loadStats();
       } catch (error) {
         console.error("Erreur lors du chargement du fichier de questions:", error);
         questionElement.innerText = "Impossible de charger les questions.";
@@ -585,10 +911,15 @@
         nextButton.style.display = 'block';
         shareButtons.style.display = 'block';
 
+        // Sauvegarder le score dans les statistiques
+        const selectedWeek = weekSelector.value;
+        const selectedDay = daySelector.value;
+        const totalQuestions = currentQuestions.length;
+        addScore(selectedWeek, selectedDay, score, totalQuestions);
+
         // Message animé avec le score final et encouragements personnalisés
         const endMessage = document.createElement('p');
         endMessage.id = 'end-message';
-        const totalQuestions = currentQuestions.length;
         let encouragement = "";
 
         if (score === totalQuestions) {
