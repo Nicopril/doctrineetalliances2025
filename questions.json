@@ -1056,12 +1056,137 @@
     ]
   },
   "25–31 août | D&A 93": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
-  },
+  "jour1": [
+    {
+      "question": "Selon D&A 93:1, quelles sont les conditions pour voir la face du Seigneur ?",
+      "answers": [
+        {"text": "Abandonner ses péchés, venir à Christ, invoquer son nom, garder ses commandements", "correct": true},
+        {"text": "Jeûner quarante jours", "correct": false},
+        {"text": "Assister à toutes les réunions", "correct": false}
+      ]
+    },
+    {
+      "question": "Selon D&A 93:2, qui ‘éclaire tout homme venant au monde’ ?",
+      "answers": [
+        {"text": "Jésus-Christ, la vraie lumière", "correct": true},
+        {"text": "Le Saint-Esprit", "correct": false},
+        {"text": "Adam", "correct": false}
+      ]
+    },
+    {
+      "question": "Qu’est-ce que le ‘commencement’ dont parle le Seigneur dans D&A 93 ?",
+      "answers": [
+        {"text": "Notre existence prémortelle avec Dieu", "correct": true},
+        {"text": "Le baptême", "correct": false},
+        {"text": "La naissance de Jésus-Christ", "correct": false}
+      ]
+    }
+  ],
+  "jour2": [
+    {
+      "question": "Selon D&A 93:11-14, que signifie ‘grâce sur grâce’ ?",
+      "answers": [
+        {"text": "Christ a grandi progressivement jusqu’à recevoir une plénitude", "correct": true},
+        {"text": "Le pardon instantané de tous les péchés", "correct": false},
+        {"text": "La multiplication des miracles", "correct": false}
+      ]
+    },
+    {
+      "question": "D&A 93:19 – Pourquoi Jésus donne-t-il ‘ces paroles’ ?",
+      "answers": [
+        {"text": "Pour que nous sachions adorer, quoi adorer, et recevions la plénitude du Père", "correct": true},
+        {"text": "Pour convaincre le monde du péché", "correct": false},
+        {"text": "Pour annoncer les dernières plaies", "correct": false}
+      ]
+    },
+    {
+      "question": "D&A 93 enseigne que ‘l’homme était aussi au commencement avec Dieu’. Qu’est-ce qui n’a pas été créé ?",
+      "answers": [
+        {"text": "L’intelligence ou la lumière de vérité", "correct": true},
+        {"text": "La terre", "correct": false},
+        {"text": "Le soleil", "correct": false}
+      ]
+    }
+  ],
+  "jour3": [
+    {
+      "question": "Que signifie ‘la gloire de Dieu est l’intelligence’ (D&A 93:36) ?",
+      "answers": [
+        {"text": "La connaissance de la vérité et la lumière", "correct": true},
+        {"text": "Le charisme dans le leadership", "correct": false},
+        {"text": "La puissance du Saint-Esprit", "correct": false}
+      ]
+    },
+    {
+      "question": "Quel principe fondamental sur l’apprentissage spirituel trouve-t-on en D&A 93:28 ?",
+      "answers": [
+        {"text": "L’homme reçoit la vérité et la lumière à mesure qu’il est obéissant", "correct": true},
+        {"text": "Le savoir vient uniquement après la mort", "correct": false},
+        {"text": "La vérité ne peut pas se perdre", "correct": false}
+      ]
+    },
+    {
+      "question": "Selon D&A 93:39, pourquoi certains perdent-ils lumière et vérité ?",
+      "answers": [
+        {"text": "À cause de la désobéissance et des traditions des pères", "correct": true},
+        {"text": "Par manque d’intelligence innée", "correct": false},
+        {"text": "Parce qu’ils ne lisent pas suffisamment", "correct": false}
+      ]
+    }
+  ],
+  "jour4": [
+    {
+      "question": "D&A 93:40 : quelle responsabilité majeure le Seigneur confie-t-il aux parents ?",
+      "answers": [
+        {"text": "Instruire leurs enfants dans la lumière et la vérité", "correct": true},
+        {"text": "Devenir des missionnaires toute leur vie", "correct": false},
+        {"text": "Multiplier les biens matériels", "correct": false}
+      ]
+    },
+    {
+      "question": "Dans D&A 93, à qui le Seigneur reproche-t-il de manquer à leur devoir familial ?",
+      "answers": [
+        {"text": "À Joseph Smith, Sidney Rigdon, Frederick G. Williams, et Newel K. Whitney", "correct": true},
+        {"text": "À tous les membres de l’Église", "correct": false},
+        {"text": "Aux apôtres de Jérusalem", "correct": false}
+      ]
+    },
+    {
+      "question": "D&A 93:50 — Quel avertissement donne le Seigneur à ses serviteurs concernant leur foyer ?",
+      "answers": [
+        {"text": "Mettre leur maison en ordre, être plus diligents et prier toujours", "correct": true},
+        {"text": "Partir en mission immédiatement", "correct": false},
+        {"text": "Recevoir toutes les ordonnances en famille", "correct": false}
+      ]
+    }
+  ],
+  "jour5": [
+    {
+      "question": "D&A 93 : Quelle doctrine sur la progression de Jésus-Christ est enseignée ici ?",
+      "answers": [
+        {"text": "Même Jésus a grandi de grâce en grâce jusqu’à recevoir une plénitude", "correct": true},
+        {"text": "Jésus était omniscient dès la naissance", "correct": false},
+        {"text": "Jésus n’avait aucune nature humaine", "correct": false}
+      ]
+    },
+    {
+      "question": "Comment puis-je recevoir plus de lumière et de vérité selon D&A 93 ?",
+      "answers": [
+        {"text": "Par l’obéissance aux commandements et la fidélité", "correct": true},
+        {"text": "En assistant seulement aux réunions", "correct": false},
+        {"text": "Par l’étude intellectuelle seule", "correct": false}
+      ]
+    },
+    {
+      "question": "D&A 93 : Que faut-il faire pour ne pas perdre la lumière reçue ?",
+      "answers": [
+        {"text": "Continuer à obéir et éviter de suivre de fausses traditions", "correct": true},
+        {"text": "Jeûner systématiquement une fois par semaine", "correct": false},
+        {"text": "Se retirer du monde", "correct": false}
+      ]
+    }
+  ]
+}
   "1–7 septembre | D&A 94–97": {
     "jour1": [],
     "jour2": [],
