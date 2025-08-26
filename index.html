@@ -857,14 +857,21 @@
     }
 
     function populateWeekSelector() {
-      weekSelector.innerHTML = '';
-      Object.keys(allData).forEach(week => {
-        const option = document.createElement('option');
-        option.value = week;
-        option.innerText = week;
-        weekSelector.appendChild(option);
-      });
-    }
+  weekSelector.innerHTML = '';
+
+  // 🔹 Forcer l'ajout de la nouvelle semaine Doctrine et Alliances 93
+  const newWeek = "25–31 août | D&A 93";
+  if (!allData[newWeek]) {
+    allData[newWeek] = { "jour 1": [] }; // crée une entrée vide si elle n’existe pas encore
+  }
+
+  Object.keys(allData).forEach(week => {
+    const option = document.createElement('option');
+    option.value = week;
+    option.innerText = week;
+    weekSelector.appendChild(option);
+  });
+}
 
     function populateDaySelector(weekData) {
       daySelector.innerHTML = '';
