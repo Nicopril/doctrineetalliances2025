@@ -495,10 +495,12 @@
       font-size: 1.1rem;
     }
 
+    /* NOUVEAU: Style pour le score avec transition de couleur */
     #score {
       margin-top: 1rem;
       font-weight: bold;
       font-size: 1.1rem;
+      transition: color 0.5s ease;
     }
 
     /* Nouvelle classe pour l'animation de fin */
@@ -785,7 +787,25 @@
       perfectScores: 0
     };
 
-    // NOUVELLE FONCTION: Mettre à jour la barre de progression
+    // NOUVELLE FONCTION: Couleurs adaptatives pour le score
+    function updateScoreColor() {
+      const totalQuestions = currentQuestions.length;
+      if (totalQuestions === 0) return;
+
+      const percentage = (score / totalQuestions) * 100;
+      
+      if (percentage >= 90) {
+        scoreElement.style.color = '#10B981'; // 🟢 Vert pour excellent (90%+)
+      } else if (percentage >= 70) {
+        scoreElement.style.color = '#3B82F6'; // 🔵 Bleu pour bon (70-89%)
+      } else if (percentage >= 50) {
+        scoreElement.style.color = '#F59E0B'; // 🟡 Orange pour moyen (50-69%)
+      } else {
+        scoreElement.style.color = '#EF4444'; // 🔴 Rouge pour faible (0-49%)
+      }
+    }
+
+    // FONCTION MODIFIÉE: Mettre à jour la barre de progression
     function updateProgress() {
       const totalQuestions = currentQuestions.length;
       const answeredQuestions = totalQuestions - availableQuestions.length;
@@ -929,6 +949,7 @@
       revisionQuestions = [];
       score = 0;
       scoreElement.textContent = 'Score : 0';
+      updateScoreColor(); // Réinitialiser la couleur
       
       quizModeInfo.innerHTML = '🔄 <strong>Mode Révision</strong> : Travaillez les questions où vous avez fait des erreurs';
       
@@ -1063,6 +1084,7 @@
       shareButtons.style.display = 'none';
       score = 0;
       scoreElement.innerText = 'Score : ' + score;
+      updateScoreColor(); // Couleur initiale
       
       // Initialiser la progression
       updateProgress();
@@ -1185,6 +1207,7 @@
       }, 200);
     }
 
+    // FONCTION MODIFIÉE: selectAnswer avec couleurs adaptatives
     function selectAnswer(e) {
       const selectedButton = e.target;
       const correct = selectedButton.dataset.correct === "true";
@@ -1205,6 +1228,7 @@
       if (correct) {
         score++;
         scoreElement.innerText = 'Score : ' + score;
+        updateScoreColor(); // 🎨 NOUVEAU: Mettre à jour la couleur!
       } else {
         if (!revisionQuestions.some(q => q.question === currentQuestion.question)) {
           revisionQuestions.push(currentQuestion);
