@@ -1063,7 +1063,17 @@
       isRevisionMode = false;
       revisionQuestions = [];
       quizModeInfo.textContent = '';
-      
+
+      const existingEndMessage = quizArea.querySelector('#end-message');
+      if (existingEndMessage) {
+        existingEndMessage.remove();
+      }
+
+      const existingStudyLinks = quizArea.querySelector('.study-links');
+      if (existingStudyLinks) {
+        existingStudyLinks.remove();
+      }
+
       if (currentQuestions.length === 0) {
         quizArea.classList.remove('hidden');
         document.getElementById('progress-container').style.display = 'none';
