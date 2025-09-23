@@ -910,7 +910,7 @@
 
     // Toggle affichage des statistiques
     statsToggleBtn.addEventListener('click', () => {
-      const isVisible = statsSection.style.display !== 'none';
+      const isVisible = getComputedStyle(statsSection).display !== 'none';
       if (isVisible) {
         statsSection.style.display = 'none';
         statsToggleBtn.textContent = '📊 Voir mes statistiques';
