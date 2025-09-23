@@ -790,10 +790,15 @@
     // NOUVELLE FONCTION: Couleurs adaptatives pour le score
     function updateScoreColor() {
       const totalQuestions = currentQuestions.length;
-      if (totalQuestions === 0) return;
+      const answeredQuestions = totalQuestions - availableQuestions.length;
+
+      if (totalQuestions === 0 || answeredQuestions <= 0) {
+        scoreElement.style.color = 'var(--text-color)';
+        return;
+      }
 
       const percentage = (score / totalQuestions) * 100;
-      
+
       if (percentage >= 90) {
         scoreElement.style.color = '#10B981'; // 🟢 Vert pour excellent (90%+)
       } else if (percentage >= 70) {
