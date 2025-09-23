@@ -962,6 +962,15 @@
         return;
       }
 
+      const oldEndMsg = document.getElementById('end-message');
+      if (oldEndMsg) {
+        oldEndMsg.remove();
+      }
+      const oldStudyLinks = document.querySelector('.study-links');
+      if (oldStudyLinks) {
+        oldStudyLinks.remove();
+      }
+
       isRevisionMode = true;
       currentQuestions = [...revisionQuestions];
       availableQuestions = [...revisionQuestions];
@@ -1079,6 +1088,15 @@
 
     // FONCTION MODIFIÉE: startQuiz avec barre de progression
     function startQuiz() {
+      const oldEndMsg = document.getElementById('end-message');
+      if (oldEndMsg) {
+        oldEndMsg.remove();
+      }
+      const oldStudyLinks = document.querySelector('.study-links');
+      if (oldStudyLinks) {
+        oldStudyLinks.remove();
+      }
+
       isRevisionMode = false;
       revisionQuestions = [];
       quizModeInfo.textContent = '';
