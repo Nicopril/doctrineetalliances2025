@@ -816,7 +816,18 @@
     // FONCTION MODIFIÉE: Mettre à jour la barre de progression
     function updateProgress() {
       const totalQuestions = currentQuestions.length;
-      const answeredQuestions = totalQuestions - availableQuestions.length;
+      let answeredQuestions = totalQuestions - availableQuestions.length;
+
+      if (availableQuestions.length === 0 && totalQuestions > 0) {
+        answeredQuestions = totalQuestions;
+      }
+
+      if (answeredQuestions < 0) {
+        answeredQuestions = 0;
+      } else if (answeredQuestions > totalQuestions) {
+        answeredQuestions = totalQuestions;
+      }
+
       const percentage = totalQuestions > 0 ? (answeredQuestions / totalQuestions) * 100 : 0;
       
       document.getElementById('progress-bar').style.width = percentage + '%';
@@ -1244,6 +1255,7 @@
       }
 
       availableQuestions.splice(currentQuestionIndex, 1);
+      updateProgress();
     }
 
     function setupShareFeatures() {
