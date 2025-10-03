@@ -994,21 +994,32 @@
         allData = await response.json();
         populateWeekSelector();
         
-        // Semaine à sélectionner automatiquement
-        const currentWeek = "15–21 septembre | D&A 102–105";
         const weekKeys = Object.keys(allData);
-        const currentWeekIndex = weekKeys.indexOf(currentWeek);
-        
-        if (currentWeekIndex !== -1) {
-          weekSelector.selectedIndex = currentWeekIndex;
+
+        if (weekSelector.options.length > 0) {
+          let bestWeekIndex = -1;
+
+          weekKeys.forEach((week, index) => {
+            const weekData = allData[week];
+            const hasQuestions = weekData && Object.values(weekData).some(dayQuestions =>
+              Array.isArray(dayQuestions) && dayQuestions.length > 0
+            );
+
+            if (hasQuestions) {
+              bestWeekIndex = index;
+            }
+          });
+
+          const selectedWeekIndex = bestWeekIndex !== -1 ? bestWeekIndex : 0;
+          weekSelector.selectedIndex = Math.min(selectedWeekIndex, weekSelector.options.length - 1);
+
+          handleWeekChange();
+          if (daySelector.options.length > 0) {
+            daySelector.selectedIndex = 0;
+            handleDayChange();
+          }
         } else {
           weekSelector.selectedIndex = 0;
-        }
-        
-        handleWeekChange();
-        if (daySelector.options.length > 0) {
-          daySelector.selectedIndex = 0;
-          handleDayChange();
         }
         loadStats();
       } catch (error) {
