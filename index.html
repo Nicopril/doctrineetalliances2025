@@ -34,6 +34,35 @@
       align-items: start;
       padding: 2rem 1rem;
       min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: -20%;
+      left: -20%;
+      width: 140%;
+      height: 140%;
+      background: radial-gradient(circle at 20% 20%, rgba(148, 197, 253, 0.25), transparent 55%),
+        radial-gradient(circle at 80% 0%, rgba(16, 185, 129, 0.2), transparent 55%),
+        linear-gradient(120deg, rgba(0, 90, 148, 0.12), rgba(16, 185, 129, 0.08));
+      animation: backgroundDrift 24s ease-in-out infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @keyframes backgroundDrift {
+      0% {
+        transform: scale(1) translate(0, 0);
+      }
+      50% {
+        transform: scale(1.05) translate(2%, 3%);
+      }
+      100% {
+        transform: scale(1) translate(0, 0);
+      }
     }
 
     #app-container {
@@ -43,6 +72,8 @@
       box-shadow: var(--shadow);
       max-width: 700px;
       width: 100%;
+      position: relative;
+      z-index: 1;
     }
 
     h1 {
@@ -51,8 +82,105 @@
       margin-bottom: 0.5rem;
     }
 
+    #daily-greeting {
+      margin: 0.25rem 0 1.5rem 0;
+      text-align: center;
+      font-weight: 600;
+      color: var(--primary-color);
+      opacity: 0;
+      transform: translateY(-10px);
+      animation: fadeSlideDown 0.9s ease forwards;
+    }
+
+    @keyframes fadeSlideDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     p, label {
       font-size: 1rem;
+    }
+
+    .intro-text {
+      position: relative;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      text-align: center;
+      margin: 0 auto 1.75rem auto;
+      max-width: 90%;
+    }
+
+    .intro-text::after {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      margin-left: 6px;
+      background-color: var(--primary-color);
+      opacity: 0;
+    }
+
+    .intro-text.typing::after {
+      opacity: 1;
+      animation: blinkCursor 0.8s steps(1) infinite;
+    }
+
+    .intro-text.typing-complete::after {
+      opacity: 1;
+      animation: blinkCursor 1.2s steps(1) infinite;
+    }
+
+    @keyframes blinkCursor {
+      0%, 50% {
+        opacity: 1;
+      }
+      50.01%, 100% {
+        opacity: 0;
+      }
+    }
+
+    .floating-badges {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+
+    .floating-badge {
+      background: linear-gradient(135deg, rgba(0, 90, 148, 0.15), rgba(59, 130, 246, 0.2));
+      color: var(--primary-color);
+      padding: 0.65rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      box-shadow: 0 8px 20px rgba(0, 90, 148, 0.12);
+      animation: floatBadge 5.8s ease-in-out infinite;
+    }
+
+    .floating-badge:nth-child(2) {
+      animation-delay: 1.2s;
+    }
+
+    .floating-badge:nth-child(3) {
+      animation-delay: 2.4s;
+    }
+
+    @keyframes floatBadge {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
     }
 
     blockquote {
@@ -143,6 +271,23 @@
       border-radius: 10px;
       transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
       box-shadow: 0 2px 4px rgba(0,90,148,0.3);
+      position: relative;
+    }
+
+    .pulse-progress {
+      animation: progressPulse 0.6s ease;
+    }
+
+    @keyframes progressPulse {
+      0% {
+        box-shadow: 0 0 0 rgba(0, 90, 148, 0.35);
+      }
+      50% {
+        box-shadow: 0 0 18px rgba(16, 185, 129, 0.5);
+      }
+      100% {
+        box-shadow: 0 2px 4px rgba(0,90,148,0.3);
+      }
     }
 
     .progress-text {
@@ -214,6 +359,7 @@
       border-radius: var(--border-radius);
       padding: 1.5rem;
       margin: 1.5rem 0;
+      box-shadow: 0 12px 30px rgba(0, 90, 148, 0.12);
     }
 
     .stats-section h3 {
@@ -235,6 +381,30 @@
       border-radius: var(--border-radius);
       text-align: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .stat-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -60%;
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0), rgba(148, 197, 253, 0.35), rgba(255, 255, 255, 0));
+      transform: skewX(-20deg);
+      transition: transform 0.5s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0, 90, 148, 0.18);
+    }
+
+    .stat-card:hover::after {
+      transform: translateX(220%) skewX(-20deg);
     }
 
     .stat-number {
@@ -280,10 +450,11 @@
       min-width: 30px;
       position: relative;
       transition: transform 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0, 90, 148, 0.12);
     }
 
     .bar:hover {
-      transform: scale(1.05);
+      transform: translateY(-4px) scale(1.03);
     }
 
     .bar-label {
@@ -518,6 +689,24 @@
       100% { opacity: 1; transform: scale(1); }
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      body::before {
+        animation: none;
+      }
+
+      .floating-badge,
+      .intro-text::after,
+      .pulse-progress,
+      .question-enter,
+      .answers-enter {
+        animation: none !important;
+      }
+
+      .intro-text::after {
+        opacity: 0;
+      }
+    }
+
     /* Style pour la photo du prophète (simple et intégré) */
     #quote-container {
       display: flex;
@@ -552,10 +741,19 @@
         text-align: center;
       }
 
-      p:first-of-type {
+      #daily-greeting {
         font-size: 1.1rem;
-        line-height: 1.6;
-        margin-bottom: 2rem;
+      }
+
+      .floating-badges {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .intro-text {
+        font-size: 1.15rem;
+        line-height: 1.75;
+        margin-bottom: 2.25rem;
         text-align: center;
       }
 
@@ -647,9 +845,17 @@
 <body>
   <div id="app-container">
     <h1>Bienvenue au Quiz "Viens et suis-moi"</h1>
-    <p>Cette année nous sommes invités à étudier doctrine et alliances.
-      J'espère que ces quiz vous aideront à approfondir les principes et la doctrine étudiés chaque semaine.
-      Les quiz seront mise à jour chaque semaine.Bon courage à tous !</p>
+    <p id="daily-greeting" aria-live="polite"></p>
+    <div class="floating-badges" aria-hidden="true">
+      <span class="floating-badge">✨ Inspiration quotidienne</span>
+      <span class="floating-badge">📘 Doctrine &amp; Alliances</span>
+      <span class="floating-badge">🎯 Objectif 100%</span>
+    </div>
+    <p id="intro-text" class="intro-text"
+      data-text="Cette année nous sommes invités à étudier Doctrine et Alliances. J'espère que ces quiz vous aideront à approfondir les principes et la doctrine étudiés chaque semaine. Les quiz seront mis à jour chaque semaine. Bon courage à tous !">
+      Cette année nous sommes invités à étudier Doctrine et Alliances. J'espère que ces quiz vous aideront à approfondir les principes et la doctrine étudiés chaque semaine. Les quiz seront mis à jour chaque semaine. Bon
+      courage à tous !
+    </p>
     
     <!-- Conteneur pour la photo + citation -->
     <div id="quote-container">
@@ -764,6 +970,19 @@
     const shareButtons = document.getElementById('share-buttons');
     const scoreElement = document.getElementById('score');
     const quizModeInfo = document.getElementById('quiz-mode-info');
+    const introTextElement = document.getElementById('intro-text');
+    const greetingElement = document.getElementById('daily-greeting');
+    const progressBarElement = document.getElementById('progress-bar');
+    const currentProgressText = document.getElementById('current-progress');
+    const totalProgressText = document.getElementById('total-progress');
+
+    if (progressBarElement) {
+      progressBarElement.setAttribute('role', 'progressbar');
+      progressBarElement.setAttribute('aria-label', 'Progression du quiz');
+      progressBarElement.setAttribute('aria-valuemin', '0');
+      progressBarElement.setAttribute('aria-valuemax', '0');
+      progressBarElement.setAttribute('aria-valuenow', '0');
+    }
 
     // Éléments pour les statistiques
     const statsToggleBtn = document.getElementById('stats-toggle-btn');
@@ -789,6 +1008,110 @@
       bestScore: 0,
       perfectScores: 0
     };
+
+    function typeIntroText() {
+      if (!introTextElement || introTextElement.dataset.typed === 'true') {
+        return;
+      }
+
+      const fullText = introTextElement.dataset.text || introTextElement.textContent || '';
+      if (!fullText.trim()) {
+        return;
+      }
+
+      introTextElement.dataset.typed = 'true';
+
+      const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReducedMotion) {
+        introTextElement.textContent = fullText;
+        introTextElement.classList.add('typing-complete');
+        introTextElement.classList.remove('typing');
+        return;
+      }
+
+      introTextElement.textContent = '';
+      introTextElement.classList.remove('typing-complete');
+      introTextElement.classList.add('typing');
+
+      let index = 0;
+
+      const typeNext = () => {
+        introTextElement.textContent = fullText.slice(0, index + 1);
+        index += 1;
+
+        if (index < fullText.length) {
+          const nextChar = fullText.charAt(index);
+          const delay = nextChar === '.' ? 320 : nextChar === ',' ? 180 : 35;
+          setTimeout(typeNext, delay);
+        } else {
+          introTextElement.textContent = fullText;
+          introTextElement.classList.remove('typing');
+          introTextElement.classList.add('typing-complete');
+        }
+      };
+
+      setTimeout(typeNext, 350);
+    }
+
+    function updateGreeting() {
+      if (!greetingElement) {
+        return;
+      }
+
+      const now = new Date();
+      const hour = now.getHours();
+      let salutation = 'Bonjour';
+
+      if (hour < 5) {
+        salutation = 'Bonsoir';
+      } else if (hour < 12) {
+        salutation = 'Bonjour';
+      } else if (hour < 18) {
+        salutation = 'Bon après-midi';
+      } else {
+        salutation = 'Bonsoir';
+      }
+
+      const formattedDate = now.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+      const capitalizedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+      greetingElement.textContent = `${salutation} ! Heureux ${capitalizedDate} d'étude.`;
+    }
+
+    function animateStatValue(element, targetValue, { suffix = '', prefix = '', duration = 800 } = {}) {
+      if (!element) {
+        return;
+      }
+
+      const sanitizedTarget = Number.isFinite(targetValue) ? targetValue : 0;
+      const storedValue = Number(element.dataset.value);
+      const parsedCurrent = Number.isFinite(storedValue)
+        ? storedValue
+        : parseInt(element.textContent.replace(/[^0-9-]/g, ''), 10);
+      const startValue = Number.isFinite(parsedCurrent) ? parsedCurrent : 0;
+      const difference = sanitizedTarget - startValue;
+
+      if (Math.abs(difference) < 0.01) {
+        element.textContent = `${prefix}${sanitizedTarget}${suffix}`;
+        element.dataset.value = sanitizedTarget;
+        return;
+      }
+
+      const startTime = performance.now();
+
+      const step = (now) => {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const value = Math.round(startValue + difference * progress);
+        element.textContent = `${prefix}${value}${suffix}`;
+
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          element.dataset.value = sanitizedTarget;
+        }
+      };
+
+      requestAnimationFrame(step);
+    }
 
     // NOUVELLE FONCTION: Couleurs adaptatives pour le score
     function updateScoreColor() {
@@ -829,10 +1152,24 @@
       }
 
       const percentage = totalQuestions > 0 ? (answeredQuestions / totalQuestions) * 100 : 0;
-      
-      document.getElementById('progress-bar').style.width = percentage + '%';
-      document.getElementById('current-progress').textContent = answeredQuestions;
-      document.getElementById('total-progress').textContent = totalQuestions;
+
+      if (progressBarElement) {
+        progressBarElement.style.width = percentage + '%';
+        progressBarElement.setAttribute('aria-valuemin', '0');
+        progressBarElement.setAttribute('aria-valuenow', String(answeredQuestions));
+        progressBarElement.setAttribute('aria-valuemax', String(totalQuestions));
+        progressBarElement.classList.remove('pulse-progress');
+        void progressBarElement.offsetWidth;
+        progressBarElement.classList.add('pulse-progress');
+      }
+
+      if (currentProgressText) {
+        currentProgressText.textContent = answeredQuestions;
+      }
+
+      if (totalProgressText) {
+        totalProgressText.textContent = totalQuestions;
+      }
     }
 
     // Charger les statistiques du localStorage
@@ -878,10 +1215,18 @@
 
     // Mettre à jour l'affichage des statistiques
     function updateStatsDisplay() {
-      document.getElementById('total-quizzes').textContent = stats.totalQuizzes;
-      document.getElementById('average-score').textContent = stats.averageScore + '%';
-      document.getElementById('best-score').textContent = stats.bestScore + '%';
-      document.getElementById('perfect-scores').textContent = stats.perfectScores;
+      const totalElement = document.getElementById('total-quizzes');
+      const averageElement = document.getElementById('average-score');
+      const bestElement = document.getElementById('best-score');
+      const perfectElement = document.getElementById('perfect-scores');
+
+      const averageValue = stats.totalQuizzes > 0 && Number.isFinite(stats.averageScore) ? stats.averageScore : 0;
+      const bestValue = stats.history.length > 0 && Number.isFinite(stats.bestScore) ? stats.bestScore : 0;
+
+      animateStatValue(totalElement, stats.totalQuizzes);
+      animateStatValue(averageElement, averageValue, { suffix: '%' });
+      animateStatValue(bestElement, bestValue, { suffix: '%' });
+      animateStatValue(perfectElement, stats.perfectScores);
       updateChart();
     }
 
@@ -1400,6 +1745,11 @@
 
     weekSelector.addEventListener('change', handleWeekChange);
     daySelector.addEventListener('change', handleDayChange);
+
+    typeIntroText();
+    updateGreeting();
+    setInterval(updateGreeting, 60000);
+
     setupShareFeatures();
     loadQuestions();
   </script>
