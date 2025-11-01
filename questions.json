@@ -4224,18 +4224,708 @@
     ]
   },
   "27 oct.–2 nov. | D&A 124": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
+    "jour1": [
+      {
+        "question": "Selon D&A 124:3, à qui Joseph Smith doit-il envoyer la proclamation du Seigneur ?",
+        "answers": [
+          {
+            "text": "Aux rois de la terre et aux dirigeants des nations",
+            "correct": true
+          },
+          {
+            "text": "Uniquement aux membres de l'Église de Nauvoo",
+            "correct": false
+          },
+          {
+            "text": "Exclusivement aux habitants des tribus lamanites",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel rôle le Seigneur prévoit-il pour la ville de Nauvoo dans D&A 124 ?",
+        "answers": [
+          {
+            "text": "Devenir un refuge pour les saints fatigués",
+            "correct": true
+          },
+          {
+            "text": "Servir d'avant-poste militaire contre les ennemis",
+            "correct": false
+          },
+          {
+            "text": "Être un centre commercial indépendant de l'Église",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle qualité du cœur d'Hyrum Smith le Seigneur souligne-t-il dans D&A 124:15 ?",
+        "answers": [
+          {
+            "text": "Son intégrité et sa fidélité aux alliances",
+            "correct": true
+          },
+          {
+            "text": "Sa capacité militaire exceptionnelle",
+            "correct": false
+          },
+          {
+            "text": "Sa fortune personnelle grandissante",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle promesse le Seigneur fait-il en D&A 124:45 à ceux qui écoutent sa voix ?",
+        "answers": [
+          {
+            "text": "Ils ne seront pas déplacés de leur place",
+            "correct": true
+          },
+          {
+            "text": "Ils recevront immédiatement des richesses temporelles",
+            "correct": false
+          },
+          {
+            "text": "Ils seront exemptés de toutes leurs responsabilités",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour2": [
+      {
+        "question": "Pourquoi le Seigneur commande-t-il la construction du temple de Nauvoo selon D&A 124:27-28 ?",
+        "answers": [
+          {
+            "text": "Pour restaurer la plénitude des ordonnances du sacerdoce",
+            "correct": true
+          },
+          {
+            "text": "Pour rivaliser avec les temples d'autres religions",
+            "correct": false
+          },
+          {
+            "text": "Pour offrir une salle de réunion civique à la ville",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle ordonnance le Seigneur mentionne-t-il spécifiquement dans D&A 124:29-33 comme devant être accomplie dans le temple ?",
+        "answers": [
+          {
+            "text": "Les baptêmes pour les morts",
+            "correct": true
+          },
+          {
+            "text": "Les mariages civils de la communauté",
+            "correct": false
+          },
+          {
+            "text": "Les ordinations des autorités civiles de l'État",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que se passera-t-il si les saints négligent de terminer le temple dans le temps fixé selon D&A 124:31-32 ?",
+        "answers": [
+          {
+            "text": "Ils seront rejetés en tant qu'Église avec leurs morts",
+            "correct": true
+          },
+          {
+            "text": "Ils perdront uniquement leurs biens temporels",
+            "correct": false
+          },
+          {
+            "text": "Ils devront retourner à Kirtland immédiatement",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle bénédiction le Seigneur promet-il concernant sa maison en D&A 124:39-41 ?",
+        "answers": [
+          {
+            "text": "Il manifestera sa gloire et révélera des ordonnances sacrées",
+            "correct": true
+          },
+          {
+            "text": "Il transformera le temple en forteresse militaire",
+            "correct": false
+          },
+          {
+            "text": "Il abolira toute autre forme d'adoration",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour3": [
+      {
+        "question": "Quel appel Hyrum Smith reçoit-il dans D&A 124:91-96 ?",
+        "answers": [
+          {
+            "text": "Être patriarche et assistant du prophète, détenant des clés du sacerdoce",
+            "correct": true
+          },
+          {
+            "text": "Prendre la direction du Nauvoo House uniquement",
+            "correct": false
+          },
+          {
+            "text": "Remplacer Brigham Young à la tête des Douze",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel rôle William Law reçoit-il selon D&A 124:97-101 ?",
+        "answers": [
+          {
+            "text": "Servir comme conseiller dans la Première Présidence",
+            "correct": true
+          },
+          {
+            "text": "Être envoyé présider une colonie lointaine",
+            "correct": false
+          },
+          {
+            "text": "Être relevé de tout appel ecclésiastique",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle responsabilité le Seigneur confie-t-il au Quorum des Douze dans D&A 124:127-130 ?",
+        "answers": [
+          {
+            "text": "Diriger les affaires du Royaume à l'étranger et recueillir des fonds pour les maisons sacrées",
+            "correct": true
+          },
+          {
+            "text": "Se limiter à présider les réunions dominicales de Nauvoo",
+            "correct": false
+          },
+          {
+            "text": "Organiser les milices locales de l'Illinois",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que demande le Seigneur aux Douze à propos de leurs conseils dans D&A 124:131-132 ?",
+        "answers": [
+          {
+            "text": "Se réunir en conseil, prier et recevoir des décisions inspirées avant d'agir",
+            "correct": true
+          },
+          {
+            "text": "Agir individuellement sans consulter les autres",
+            "correct": false
+          },
+          {
+            "text": "Reporter toute décision jusqu'à la fin de la construction du temple",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour4": [
+      {
+        "question": "Selon D&A 124, comment les saints doivent-ils soutenir la construction de la Maison de Nauvoo ?",
+        "answers": [
+          {
+            "text": "Consacrer leurs moyens et acquérir des parts pour financer l'édifice",
+            "correct": true
+          },
+          {
+            "text": "Attendre une aide financière du gouvernement fédéral",
+            "correct": false
+          },
+          {
+            "text": "Limiter les contributions aux seuls habitants de Nauvoo",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel objectif spirituel le Seigneur assigne-t-il au Nauvoo House dans D&A 124:23-24 ?",
+        "answers": [
+          {
+            "text": "Offrir un lieu de repos honorable aux visiteurs et honorer le nom du Seigneur",
+            "correct": true
+          },
+          {
+            "text": "Servir de résidence privée pour la Première Présidence",
+            "correct": false
+          },
+          {
+            "text": "Devenir un centre d'entraînement militaire",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment les saints sont-ils invités à accueillir les voyageurs selon D&A 124:23 ?",
+        "answers": [
+          {
+            "text": "Avec des tables préparées et un foyer chaleureux",
+            "correct": true
+          },
+          {
+            "text": "En les dirigeant vers les villes voisines",
+            "correct": false
+          },
+          {
+            "text": "En leur imposant des tarifs excessifs",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Pourquoi le Seigneur attache-t-il de l'importance à l'hospitalité des saints dans D&A 124 ?",
+        "answers": [
+          {
+            "text": "Parce qu'elle témoigne du rassemblement de Sion et de l'amour fraternel",
+            "correct": true
+          },
+          {
+            "text": "Parce qu'elle remplace toutes les autres ordonnances du temple",
+            "correct": false
+          },
+          {
+            "text": "Parce qu'elle dispense les membres de payer la dîme",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour5": [
+      {
+        "question": "Quel appel Newel K. Whitney reçoit-il selon D&A 124:141-144 ?",
+        "answers": [
+          {
+            "text": "Continuer à servir comme évêque et administrer les biens consacrés",
+            "correct": true
+          },
+          {
+            "text": "Quitter Nauvoo pour présider une colonie lointaine",
+            "correct": false
+          },
+          {
+            "text": "Abandonner toute responsabilité temporelle",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel office Vinson Knight reçoit-il dans D&A 124:141 ?",
+        "answers": [
+          {
+            "text": "Être évêque présidant à Nauvoo pour veiller sur les saints",
+            "correct": true
+          },
+          {
+            "text": "Diriger les Douze en mission européenne",
+            "correct": false
+          },
+          {
+            "text": "Superviser la milice de l'Illinois",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe d'organisation le Seigneur rappelle-t-il dans D&A 124:123-136 ?",
+        "answers": [
+          {
+            "text": "Que toutes choses se fassent par conseils ordonnés et sous inspiration",
+            "correct": true
+          },
+          {
+            "text": "Que chacun agisse sans consulter ses dirigeants",
+            "correct": false
+          },
+          {
+            "text": "Que les décisions temporelles soient laissées aux autorités civiles",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 124, comment les saints peuvent-ils magnifier leurs appels ?",
+        "answers": [
+          {
+            "text": "En servant avec diligence afin que le Seigneur les sanctifie",
+            "correct": true
+          },
+          {
+            "text": "En recherchant avant tout la reconnaissance publique",
+            "correct": false
+          },
+          {
+            "text": "En déléguant systématiquement leurs responsabilités",
+            "correct": false
+          }
+        ]
+      }
+    ]
   },
   "3–9 novembre | D&A 125–128": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
+    "jour1": [
+      {
+        "question": "Quelle question les saints posent-ils au Seigneur au début de D&A 125:1 ?",
+        "answers": [
+          {
+            "text": "Où ils doivent s'établir pour bâtir Sion",
+            "correct": true
+          },
+          {
+            "text": "Comment ils peuvent obtenir des armes pour se défendre",
+            "correct": false
+          },
+          {
+            "text": "Quel jour ils doivent célébrer la récolte",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel commandement le Seigneur donne-t-il dans D&A 125:2 ?",
+        "answers": [
+          {
+            "text": "Se rassembler à la terre de Zarahemla et aux pieux de Sion",
+            "correct": true
+          },
+          {
+            "text": "Rester dispersés jusqu'à la fin des persécutions",
+            "correct": false
+          },
+          {
+            "text": "Retourner en Missouri sans délai",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel nom le Seigneur donne-t-il à la ville que les saints doivent édifier dans l'Iowa selon D&A 125:3 ?",
+        "answers": [
+          {
+            "text": "Zarahemla",
+            "correct": true
+          },
+          {
+            "text": "Adam-ondi-Ahman",
+            "correct": false
+          },
+          {
+            "text": "Far West",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que doivent faire les saints du Wisconsin mentionnés dans D&A 125:4 ?",
+        "answers": [
+          {
+            "text": "Se rendre à Nauvoo et aux autres pieux désignés",
+            "correct": true
+          },
+          {
+            "text": "Rester isolés pour récolter davantage de bois",
+            "correct": false
+          },
+          {
+            "text": "Attendre un nouvel appel avant de se déplacer",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour2": [
+      {
+        "question": "Que reconnaît le Seigneur au sujet des voyages de Brigham Young dans D&A 126:1 ?",
+        "answers": [
+          {
+            "text": "Qu'il a accompli fidèlement ses missions et n'est plus requis de quitter sa famille",
+            "correct": true
+          },
+          {
+            "text": "Qu'il doit entreprendre une nouvelle mission immédiate en Europe",
+            "correct": false
+          },
+          {
+            "text": "Qu'il doit désormais se consacrer uniquement aux affaires civiles",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle promesse le Seigneur offre-t-il à Brigham Young dans D&A 126:2 ?",
+        "answers": [
+          {
+            "text": "Ses prières ont été entendues et sa famille est en sécurité sous la main du Seigneur",
+            "correct": true
+          },
+          {
+            "text": "Il recevra immédiatement une grande richesse temporelle",
+            "correct": false
+          },
+          {
+            "text": "Son appel est transféré à un autre apôtre",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel devoir demeure pour Brigham Young selon D&A 126:3 ?",
+        "answers": [
+          {
+            "text": "Tenir sa maison en ordre",
+            "correct": true
+          },
+          {
+            "text": "Se retirer complètement du ministère",
+            "correct": false
+          },
+          {
+            "text": "S'engager dans la construction du Nauvoo House à plein temps",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment le Seigneur décrit-il l'œuvre accomplie par Brigham Young dans D&A 126 ?",
+        "answers": [
+          {
+            "text": "Il a travaillé fidèlement dans la vigne du Seigneur",
+            "correct": true
+          },
+          {
+            "text": "Il doit se repentir de son manque de diligence",
+            "correct": false
+          },
+          {
+            "text": "Il a été relevé de ses responsabilités pour cause de maladie",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour3": [
+      {
+        "question": "Quel ton Joseph Smith adopte-t-il face aux persécutions dans D&A 127:2-3 ?",
+        "answers": [
+          {
+            "text": "Il se réjouit et encourage les saints à persévérer",
+            "correct": true
+          },
+          {
+            "text": "Il leur demande de suspendre toute activité de l'Église",
+            "correct": false
+          },
+          {
+            "text": "Il propose de quitter définitivement Nauvoo",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel lieu Joseph autorise-t-il temporairement pour les baptêmes pour les morts dans D&A 127:4-5 ?",
+        "answers": [
+          {
+            "text": "Le fleuve Mississippi jusqu'à ce que le temple soit prêt",
+            "correct": true
+          },
+          {
+            "text": "Les étangs privés des membres",
+            "correct": false
+          },
+          {
+            "text": "Les puits creusés dans chaque foyer",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Pourquoi Joseph insiste-t-il sur des registres précis dans D&A 127:6-7 ?",
+        "answers": [
+          {
+            "text": "Pour que les ordonnances soient valables dans les cieux",
+            "correct": true
+          },
+          {
+            "text": "Pour satisfaire uniquement les exigences légales de l'Illinois",
+            "correct": false
+          },
+          {
+            "text": "Pour empêcher les membres d'accéder aux ordonnances",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Qui Joseph Smith désigne-t-il comme greffier et enregistreur dans D&A 127:9 ?",
+        "answers": [
+          {
+            "text": "James Sloan",
+            "correct": true
+          },
+          {
+            "text": "Willard Richards",
+            "correct": false
+          },
+          {
+            "text": "George Miller",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour4": [
+      {
+        "question": "Pourquoi les registres terrestres sont-ils essentiels selon D&A 128:6-8 ?",
+        "answers": [
+          {
+            "text": "Parce que ce qui est scellé sur la terre doit l'être dans les cieux",
+            "correct": true
+          },
+          {
+            "text": "Parce qu'ils remplacent les ordonnances du temple",
+            "correct": false
+          },
+          {
+            "text": "Parce qu'ils servent principalement aux statistiques locales",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que signifie la chaîne de scellement décrite dans D&A 128:18 ?",
+        "answers": [
+          {
+            "text": "Relier les générations des vivants et des morts par les ordonnances",
+            "correct": true
+          },
+          {
+            "text": "Établir un ordre de préséance social à Nauvoo",
+            "correct": false
+          },
+          {
+            "text": "Déterminer la succession civile de la ville",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel ton Joseph Smith adopte-t-il dans D&A 128:19-23 ?",
+        "answers": [
+          {
+            "text": "Une voix de joie qui invite tous à participer à l'œuvre du salut",
+            "correct": true
+          },
+          {
+            "text": "Une mise en garde de suspendre les ordonnances pour les morts",
+            "correct": false
+          },
+          {
+            "text": "Une invitation à confier l'œuvre aux anges uniquement",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quels messagers célestes Joseph évoque-t-il en D&A 128:20-21 ?",
+        "answers": [
+          {
+            "text": "Moroni, Élie, Élias et d'autres porteurs de clés",
+            "correct": true
+          },
+          {
+            "text": "Adam et Noé accompagnés des douze apôtres originels",
+            "correct": false
+          },
+          {
+            "text": "Abraham et Moïse sans aucune autre personne",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour5": [
+      {
+        "question": "Quel engagement Joseph renouvelle-t-il à la fin de D&A 128:24 ?",
+        "answers": [
+          {
+            "text": "Offrir à Dieu une offrande en justice en poursuivant l'œuvre pour les morts",
+            "correct": true
+          },
+          {
+            "text": "Mettre fin aux ordonnances jusqu'à un futur temple",
+            "correct": false
+          },
+          {
+            "text": "Confier l'œuvre aux dirigeants civils de l'État",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 128:24 décrit-il la participation des saints à cette offrande ?",
+        "answers": [
+          {
+            "text": "Ils doivent présenter les archives de leurs morts fidèlement tenues",
+            "correct": true
+          },
+          {
+            "text": "Ils doivent offrir principalement des dons financiers",
+            "correct": false
+          },
+          {
+            "text": "Ils doivent laisser l'offrande aux dirigeants seuls",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel lien D&A 128 établit-il entre l'œuvre du temple et la joie éternelle ?",
+        "answers": [
+          {
+            "text": "La joie augmente lorsque les vivants et les morts sont unis par les ordonnances",
+            "correct": true
+          },
+          {
+            "text": "La joie vient seulement lorsque les membres cessent toute œuvre pour les morts",
+            "correct": false
+          },
+          {
+            "text": "La joie dépend exclusivement de la prospérité temporelle",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle invitation finale D&A 128 lance-t-il aux saints ?",
+        "answers": [
+          {
+            "text": "Se réjouir et continuer à faire entendre la voix de Sion",
+            "correct": true
+          },
+          {
+            "text": "Attendre une nouvelle révélation avant de poursuivre l'œuvre",
+            "correct": false
+          },
+          {
+            "text": "Transférer la responsabilité aux générations futures",
+            "correct": false
+          }
+        ]
+      }
+    ]
   },
   "10–16 novembre | D&A 129–132": {
     "jour1": [],
