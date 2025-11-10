@@ -4928,11 +4928,356 @@
     ]
   },
   "10–16 novembre | D&A 129–132": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
+    "jour1": [
+      {
+        "question": "Quelle clé D&A 129:4-5 donne-t-il pour discerner un ange ressuscité ?",
+        "answers": [
+          {
+            "text": "Il offrira une poignée de main que l'on pourra sentir",
+            "correct": true
+          },
+          {
+            "text": "Il refusera tout contact physique et restera silencieux",
+            "correct": false
+          },
+          {
+            "text": "Il disparaîtra immédiatement après avoir été invoqué",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 129:6-7 conseille-t-il de reconnaître un esprit d'homme juste rendu parfait ?",
+        "answers": [
+          {
+            "text": "Il n'offrira pas sa main mais délivrera son message",
+            "correct": true
+          },
+          {
+            "text": "Il acceptera de signer un document officiel",
+            "correct": false
+          },
+          {
+            "text": "Il parlera seulement par l'intermédiaire d'un interprète mortel",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle réaction révèle la tromperie d'un messager satanique selon D&A 129:8 ?",
+        "answers": [
+          {
+            "text": "Il tentera de serrer la main mais on ne sentira rien",
+            "correct": true
+          },
+          {
+            "text": "Il donnera un signe secret appris lors de l'ordination",
+            "correct": false
+          },
+          {
+            "text": "Il restera visible tout en gardant un silence parfait",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel but Joseph Smith indique-t-il pour ces clés dans D&A 129:9 ?",
+        "answers": [
+          {
+            "text": "Protéger les saints contre la tromperie des messagers du diable",
+            "correct": true
+          },
+          {
+            "text": "Garantir l'accès immédiat aux dons spirituels",
+            "correct": false
+          },
+          {
+            "text": "Remplacer toute révélation personnelle",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour2": [
+      {
+        "question": "Que nous enseigne D&A 130:18-19 au sujet de la connaissance et de l'intelligence ?",
+        "answers": [
+          {
+            "text": "Elles s'élèvent avec nous dans la résurrection et dépendent de notre diligence",
+            "correct": true
+          },
+          {
+            "text": "Elles sont redistribuées équitablement à la fin des temps",
+            "correct": false
+          },
+          {
+            "text": "Elles disparaissent pour laisser place à la foi pure",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 130:20-21 lie-t-il l'obtention des bénédictions à la loi divine ?",
+        "answers": [
+          {
+            "text": "Toute bénédiction est conditionnée par l'obéissance à une loi particulière",
+            "correct": true
+          },
+          {
+            "text": "Les bénédictions viennent surtout par le hasard et la grâce instantanée",
+            "correct": false
+          },
+          {
+            "text": "Les lois temporelles n'ont aucun rapport avec les bénédictions spirituelles",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que révèle D&A 130:22 au sujet de la nature du Père et du Fils ?",
+        "answers": [
+          {
+            "text": "Ils possèdent un corps de chair et d'os aussi tangible que celui de l'homme",
+            "correct": true
+          },
+          {
+            "text": "Ils demeurent des esprits sans forme et sans substance",
+            "correct": false
+          },
+          {
+            "text": "Ils sont fusionnés en une seule personne spirituelle",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 130:23, comment le Saint-Esprit se distingue-t-il du Père et du Fils ?",
+        "answers": [
+          {
+            "text": "Il est un personnage d'Esprit et peut habiter en nous",
+            "correct": true
+          },
+          {
+            "text": "Il est un groupe d'anges qui se relaient",
+            "correct": false
+          },
+          {
+            "text": "Il est un pouvoir impersonnel sans personnalité distincte",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour3": [
+      {
+        "question": "Quelle condition D&A 131:1-3 établit-il pour obtenir le plus haut degré de gloire céleste ?",
+        "answers": [
+          {
+            "text": "Entrer dans l'alliance du mariage éternel",
+            "correct": true
+          },
+          {
+            "text": "Accomplir un nombre déterminé d'œuvres caritatives",
+            "correct": false
+          },
+          {
+            "text": "Maîtriser toutes les langues connues",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que dit D&A 131:4 de ceux qui ne contractent pas cette alliance éternelle ?",
+        "answers": [
+          {
+            "text": "Ils ne peuvent pas parvenir à cette gloire et restent des anges ministérants",
+            "correct": true
+          },
+          {
+            "text": "Ils recevront une seconde chance après le millénium",
+            "correct": false
+          },
+          {
+            "text": "Ils perdent toute possibilité de résurrection",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 131:6 relie-t-il la foi et la connaissance ?",
+        "answers": [
+          {
+            "text": "La foi ne peut être exercée que sur des choses qui sont vraies",
+            "correct": true
+          },
+          {
+            "text": "La foi est indépendante de toute vérité objective",
+            "correct": false
+          },
+          {
+            "text": "La foi doit être remplacée par la logique humaine",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe D&A 131:7-8 enseigne-t-il au sujet de la matière et de l'esprit ?",
+        "answers": [
+          {
+            "text": "Tout esprit est une forme de matière plus fine et pure",
+            "correct": true
+          },
+          {
+            "text": "L'esprit et la matière sont entièrement séparés et incompatibles",
+            "correct": false
+          },
+          {
+            "text": "La matière cesse d'exister lorsqu'elle devient spirituelle",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour4": [
+      {
+        "question": "Quel sujet principal est abordé dans D&A 132:1-2 ?",
+        "answers": [
+          {
+            "text": "La nouvelle alliance et le mariage éternel révélés à Joseph Smith",
+            "correct": true
+          },
+          {
+            "text": "Les ordonnances du sacrement hebdomadaire",
+            "correct": false
+          },
+          {
+            "text": "L'organisation des pionniers pour le voyage vers l'ouest",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle promesse est faite aux couples qui contractent l'alliance éternelle par l'autorité appropriée selon D&A 132:19 ?",
+        "answers": [
+          {
+            "text": "Ils hériteront de trônes, de royaumes et de la continuation de la postérité",
+            "correct": true
+          },
+          {
+            "text": "Ils seront libérés de toute responsabilité parentale",
+            "correct": false
+          },
+          {
+            "text": "Ils n'auront plus besoin de faire d'alliances supplémentaires",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que dit D&A 132:20 sur ceux qui reçoivent cette gloire ?",
+        "answers": [
+          {
+            "text": "Ils seront dieux, parce qu'ils ont toute puissance et toute connaissance",
+            "correct": true
+          },
+          {
+            "text": "Ils seront relevés de tout service ministériel",
+            "correct": false
+          },
+          {
+            "text": "Ils seront transformés en anges muets",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 132:26-27, quelle condition est nécessaire pour que l'alliance du mariage éternel soit efficace ?",
+        "answers": [
+          {
+            "text": "Rester fidèles aux alliances et ne pas commettre le péché impardonnable",
+            "correct": true
+          },
+          {
+            "text": "Accumuler des richesses temporelles abondantes",
+            "correct": false
+          },
+          {
+            "text": "Recevoir une approbation annuelle du prophète",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour5": [
+      {
+        "question": "Pourquoi Abraham, Isaac et Jacob sont-ils mentionnés dans D&A 132:37-38 ?",
+        "answers": [
+          {
+            "text": "Ils ont reçu la promesse d'un accroissement éternel par l'alliance",
+            "correct": true
+          },
+          {
+            "text": "Ils ont renoncé à toutes leurs alliances matrimoniales",
+            "correct": false
+          },
+          {
+            "text": "Ils ont demandé à être relevés de la prêtrise",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel avertissement D&A 132:41-43 donne-t-il concernant l'adultère après avoir reçu cette alliance ?",
+        "answers": [
+          {
+            "text": "L'alliance est rompue et la personne est livrée aux destructions",
+            "correct": true
+          },
+          {
+            "text": "Il suffit de renouveler secrètement les vœux pour être pardonné",
+            "correct": false
+          },
+          {
+            "text": "La transgression est sans conséquence si elle reste cachée",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 132:45-48 décrit-il le pouvoir de scellement donné à Joseph Smith ?",
+        "answers": [
+          {
+            "text": "Ce qu'il scelle sur la terre est scellé dans les cieux par le Seigneur",
+            "correct": true
+          },
+          {
+            "text": "Il peut transférer le pouvoir à n'importe qui sans révélation",
+            "correct": false
+          },
+          {
+            "text": "Il ne peut sceller que les alliances temporelles de propriété",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle instruction D&A 132:51-56 donne-t-il à Emma Smith ?",
+        "answers": [
+          {
+            "text": "Recevoir ce que le Seigneur a révélé et rester fidèle aux alliances",
+            "correct": true
+          },
+          {
+            "text": "Quitter Nauvoo pour diriger les saints ailleurs",
+            "correct": false
+          },
+          {
+            "text": "Renoncer à toutes les ordonnances du temple",
+            "correct": false
+          }
+        ]
+      }
+    ]
   },
   "17–23 novembre | D&A 133–134": {
     "jour1": [],
