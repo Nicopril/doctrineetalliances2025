@@ -5280,45 +5280,2115 @@
     ]
   },
   "17–23 novembre | D&A 133–134": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
+    "jour1": [
+      {
+        "question": "Quel appel D&A 133:4-7 lance-t-il aux saints concernant Babylone ?",
+        "answers": [
+          {
+            "text": "Sortir de Babylone et purifier leurs vêtements",
+            "correct": true
+          },
+          {
+            "text": "S'organiser politiquement pour diriger Babylone",
+            "correct": false
+          },
+          {
+            "text": "S'isoler en silence sans avertir le monde",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 133:9-10, quel rythme le Seigneur recommande-t-il pour se préparer à sa venue ?",
+        "answers": [
+          {
+            "text": "Être constamment prêts, de jour comme de nuit",
+            "correct": true
+          },
+          {
+            "text": "Attendre un signe spécifique avant d'agir",
+            "correct": false
+          },
+          {
+            "text": "Retarder la repentance jusqu'au dernier moment",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle relation D&A 133:11-12 établit-il entre l'Évangile et les nations ?",
+        "answers": [
+          {
+            "text": "L'Évangile doit être prêché à toute nation avant la fin",
+            "correct": true
+          },
+          {
+            "text": "Seules les tribus d'Israël doivent l'entendre",
+            "correct": false
+          },
+          {
+            "text": "Les nations paisibles peuvent être exclues",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que signifie l'invitation de D&A 133:14 à 'se tourner vers le Seigneur' ?",
+        "answers": [
+          {
+            "text": "Chercher sa face et délaisser les abominations",
+            "correct": true
+          },
+          {
+            "text": "Attendre que les anges fassent le travail à notre place",
+            "correct": false
+          },
+          {
+            "text": "Revenir aux traditions de Babylone",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour2": [
+      {
+        "question": "Comment D&A 133:17-19 décrit-il la réunion d'Israël ?",
+        "answers": [
+          {
+            "text": "Ils se rassembleront des quatre coins de la terre vers Sion",
+            "correct": true
+          },
+          {
+            "text": "Ils resteront dispersés jusqu'à la fin du millénaire",
+            "correct": false
+          },
+          {
+            "text": "Seules les tribus du nord seront invitées",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel rôle D&A 133:20-22 attribue-t-il au Sauveur au moment de son retour ?",
+        "answers": [
+          {
+            "text": "Il se tiendra sur le mont des Oliviers et jugera les nations",
+            "correct": true
+          },
+          {
+            "text": "Il restera caché jusqu'après le millénium",
+            "correct": false
+          },
+          {
+            "text": "Il délègue entièrement cette mission aux prophètes",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que prédit D&A 133:23-25 au sujet de la voie pour le peuple du Seigneur ?",
+        "answers": [
+          {
+            "text": "Les montagnes seront abaissées et les vallées élevées pour leur passage",
+            "correct": true
+          },
+          {
+            "text": "Un désert éternel les séparera des lieux saints",
+            "correct": false
+          },
+          {
+            "text": "Ils voyageront uniquement par mer",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle purification des nations est évoquée dans D&A 133:26-34 ?",
+        "answers": [
+          {
+            "text": "Les nations méchantes seront détruites tandis que les justes seront sauvés",
+            "correct": true
+          },
+          {
+            "text": "Toutes les nations seront automatiquement exaltées",
+            "correct": false
+          },
+          {
+            "text": "La justice sera suspendue pendant la transition",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour3": [
+      {
+        "question": "Que relate D&A 133:35-39 au sujet des tribus perdues ?",
+        "answers": [
+          {
+            "text": "Elles reviendront avec un chant de joie et des annales à offrir",
+            "correct": true
+          },
+          {
+            "text": "Elles resteront inconnues jusqu'après le millénium",
+            "correct": false
+          },
+          {
+            "text": "Elles seront absorbées par Babylone sans distinction",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 133:40-45, quelle mission les serviteurs du Seigneur reçoivent-ils ?",
+        "answers": [
+          {
+            "text": "Élever la voix comme sonneries de trompette pour avertir le monde",
+            "correct": true
+          },
+          {
+            "text": "S'effacer pour laisser la nature témoigner seule",
+            "correct": false
+          },
+          {
+            "text": "Organiser des armées temporelles de conquête",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle promesse pour les repentants est donnée dans D&A 133:52-53 ?",
+        "answers": [
+          {
+            "text": "Le Seigneur essuiera leurs larmes et changera leurs vêtements",
+            "correct": true
+          },
+          {
+            "text": "Ils auront une exemption permanente de toute épreuve",
+            "correct": false
+          },
+          {
+            "text": "Ils ne seront plus autorisés à témoigner",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 133:57-60 décrit-il la relation entre justice et miséricorde ?",
+        "answers": [
+          {
+            "text": "La justice réclame, mais la miséricorde est offerte par le Seigneur à ceux qui se repentent",
+            "correct": true
+          },
+          {
+            "text": "La miséricorde annule entièrement la justice pour tous",
+            "correct": false
+          },
+          {
+            "text": "La justice n'est appliquée que pendant le millénium",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour4": [
+      {
+        "question": "Quel symbole D&A 133:62-64 utilise-t-il pour décrire la parole du Seigneur aux méchants ?",
+        "answers": [
+          {
+            "text": "Comme une épée qui sort de sa bouche",
+            "correct": true
+          },
+          {
+            "text": "Comme un murmure difficile à entendre",
+            "correct": false
+          },
+          {
+            "text": "Comme un filet de pluie légère",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle bénédiction D&A 133:70-72 promet-il à ceux qui reçoivent l'Évangile ?",
+        "answers": [
+          {
+            "text": "Ils recevront des couronnes et seront glorifiés avec les saints",
+            "correct": true
+          },
+          {
+            "text": "Ils auront une richesse temporelle garantie",
+            "correct": false
+          },
+          {
+            "text": "Ils seront relevés de toute responsabilité",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 133:74-75 décrit-il la venue du Seigneur ?",
+        "answers": [
+          {
+            "text": "Il viendra avec puissance, vêtu de vêtements rouges",
+            "correct": true
+          },
+          {
+            "text": "Il apparaîtra discrètement à quelques disciples seulement",
+            "correct": false
+          },
+          {
+            "text": "Il attendra que les nations élisent un représentant",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel encouragement D&A 133:81-82 donne-t-il aux messagers de l'alliance ?",
+        "answers": [
+          {
+            "text": "Publier la paix et annoncer la bonne nouvelle du salut",
+            "correct": true
+          },
+          {
+            "text": "Éviter de prêcher dans les lieux éloignés",
+            "correct": false
+          },
+          {
+            "text": "Restreindre le message aux familles déjà converties",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour5": [
+      {
+        "question": "Que déclare D&A 134:1 au sujet des gouvernements ?",
+        "answers": [
+          {
+            "text": "Ils sont institués par Dieu pour la paix et la protection des droits",
+            "correct": true
+          },
+          {
+            "text": "Ils sont une invention purement humaine sans valeur",
+            "correct": false
+          },
+          {
+            "text": "Ils doivent remplacer la religion",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 134:4-5, quel droit fondamental doit être garanti ?",
+        "answers": [
+          {
+            "text": "La liberté de conscience et de culte",
+            "correct": true
+          },
+          {
+            "text": "L'obligation d'adopter une religion d'État",
+            "correct": false
+          },
+          {
+            "text": "La suppression des minorités religieuses",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que précise D&A 134:8 concernant les lois humaines ?",
+        "answers": [
+          {
+            "text": "Elles doivent protéger la vie, la propriété et la liberté de chacun",
+            "correct": true
+          },
+          {
+            "text": "Elles visent surtout à enrichir les dirigeants",
+            "correct": false
+          },
+          {
+            "text": "Elles peuvent être ignorées si on est en désaccord",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe D&A 134:11 enseigne-t-il aux membres de l'Église ?",
+        "answers": [
+          {
+            "text": "Être des citoyens honnêtes qui respectent les lois et cherchent la paix",
+            "correct": true
+          },
+          {
+            "text": "Se retirer de toute participation civique",
+            "correct": false
+          },
+          {
+            "text": "Placer les lois humaines au-dessus de la loi divine",
+            "correct": false
+          }
+        ]
+      }
+    ]
   },
   "24–30 novembre | D&A 135–136": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
+    "jour1": [
+      {
+        "question": "Quel événement historique D&A 135:1-2 décrit-il ?",
+        "answers": [
+          {
+            "text": "Le martyre de Joseph et Hyrum Smith à Carthage",
+            "correct": true
+          },
+          {
+            "text": "La bataille de Nauvoo contre les milices",
+            "correct": false
+          },
+          {
+            "text": "La dédicace du temple de Kirtland",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 135:3 décrit-il Joseph Smith ?",
+        "answers": [
+          {
+            "text": "Comme un prophète ayant fait plus pour le salut des hommes que quiconque sauf Jésus",
+            "correct": true
+          },
+          {
+            "text": "Comme un dirigeant politique avant tout",
+            "correct": false
+          },
+          {
+            "text": "Comme un ermite retiré du monde",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle promesse D&A 135:5 attribue-t-il au témoignage versé par le sang ?",
+        "answers": [
+          {
+            "text": "Le témoignage demeure en force pour le monde",
+            "correct": true
+          },
+          {
+            "text": "Il sera rapidement oublié par les nations",
+            "correct": false
+          },
+          {
+            "text": "Il annule le besoin d'écrire les révélations",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 135:6-7, quel effet la mort des prophètes a-t-elle sur l'œuvre ?",
+        "answers": [
+          {
+            "text": "Leurs voix continuent de parler et d'inspirer les saints",
+            "correct": true
+          },
+          {
+            "text": "L'œuvre est interrompue jusqu'à un nouveau prophète",
+            "correct": false
+          },
+          {
+            "text": "Les clés sont perdues pour toujours",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour2": [
+      {
+        "question": "Quel rôle John Taylor joue-t-il selon D&A 135:4 ?",
+        "answers": [
+          {
+            "text": "Témoin oculaire du martyre et futur président de l'Église",
+            "correct": true
+          },
+          {
+            "text": "Commandant des milices de l'Illinois",
+            "correct": false
+          },
+          {
+            "text": "Éditeur d'un journal opposé aux saints",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel hommage D&A 135:7 rend-il aux frères Smith ?",
+        "answers": [
+          {
+            "text": "Ils ont scellé leur témoignage de leur sang pour l'Évangile",
+            "correct": true
+          },
+          {
+            "text": "Ils ont renoncé à toutes leurs révélations",
+            "correct": false
+          },
+          {
+            "text": "Ils ont quitté l'Église avant leur mort",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel sentiment envers les persécuteurs D&A 135:7 propose-t-il ?",
+        "answers": [
+          {
+            "text": "Pardonner sans oublier la justice de Dieu",
+            "correct": true
+          },
+          {
+            "text": "Chercher immédiatement la vengeance",
+            "correct": false
+          },
+          {
+            "text": "Oublier totalement le martyre",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 135 invite-t-il les saints à envisager l'avenir après le martyre ?",
+        "answers": [
+          {
+            "text": "Continuer l'œuvre avec foi, sachant que le témoignage demeure",
+            "correct": true
+          },
+          {
+            "text": "Se disperser et suspendre la prédication",
+            "correct": false
+          },
+          {
+            "text": "Répudier toutes les révélations antérieures",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour3": [
+      {
+        "question": "Quel conseil D&A 136:1-4 donne-t-il concernant l'organisation des saints en route ?",
+        "answers": [
+          {
+            "text": "Former des compagnies dirigées par des capitaines et des conseils",
+            "correct": true
+          },
+          {
+            "text": "Voyager seuls pour éviter l'attention",
+            "correct": false
+          },
+          {
+            "text": "Attendre un signe céleste avant de partir",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe d'entraide D&A 136:8-10 enseigne-t-il ?",
+        "answers": [
+          {
+            "text": "Aider les pauvres et les faibles dans le voyage",
+            "correct": true
+          },
+          {
+            "text": "Réserver les ressources aux dirigeants",
+            "correct": false
+          },
+          {
+            "text": "Laisser les personnes âgées derrière",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 136:11-12, quelle attitude doit accompagner le départ vers l'Ouest ?",
+        "answers": [
+          {
+            "text": "Être joyeux et relever les mains qui pendent",
+            "correct": true
+          },
+          {
+            "text": "Se lamenter constamment sur les pertes",
+            "correct": false
+          },
+          {
+            "text": "Abandonner toute prière",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que recommande D&A 136:16 pour préserver l'unité du camp ?",
+        "answers": [
+          {
+            "text": "Éviter la querelle et vivre en justice",
+            "correct": true
+          },
+          {
+            "text": "Nommer un seul dirigeant absolu sans conseil",
+            "correct": false
+          },
+          {
+            "text": "Permettre la vengeance personnelle",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour4": [
+      {
+        "question": "Quel avertissement D&A 136:18-20 donne-t-il au sujet de l'obéissance ?",
+        "answers": [
+          {
+            "text": "Ceux qui ne gardent pas les commandements n'ont pas de promesse",
+            "correct": true
+          },
+          {
+            "text": "L'obéissance est facultative pendant les voyages",
+            "correct": false
+          },
+          {
+            "text": "La désobéissance n'affecte que les dirigeants",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 136:21-23 encourage-t-il à gérer la tristesse ?",
+        "answers": [
+          {
+            "text": "Ne pas murmurer mais prendre courage dans le Seigneur",
+            "correct": true
+          },
+          {
+            "text": "Supprimer toute expression de foi",
+            "correct": false
+          },
+          {
+            "text": "Répandre les accusations entre compagnons",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle promesse D&A 136:31-32 fait-il concernant les épreuves ?",
+        "answers": [
+          {
+            "text": "Elles permettront d'être exaltés si on les supporte avec patience",
+            "correct": true
+          },
+          {
+            "text": "Elles seront retirées dès la première plainte",
+            "correct": false
+          },
+          {
+            "text": "Elles ne servent qu'à punir sans but",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que souligne D&A 136:30-33 à propos de la connaissance divine ?",
+        "answers": [
+          {
+            "text": "Toutes les choses sont connues de Dieu et il parle par ses prophètes",
+            "correct": true
+          },
+          {
+            "text": "Dieu laisse les saints sans révélation pendant les voyages",
+            "correct": false
+          },
+          {
+            "text": "La révélation appartient uniquement aux anges",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour5": [
+      {
+        "question": "Quel commandement D&A 136:34-35 réaffirme-t-il au sujet de la parole de Dieu ?",
+        "answers": [
+          {
+            "text": "Ne pas la mépriser, car elle est donnée pour notre salut",
+            "correct": true
+          },
+          {
+            "text": "La limiter aux écrits antérieurs",
+            "correct": false
+          },
+          {
+            "text": "La subordonner aux traditions humaines",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 136:36-37 décrit-il la responsabilité des saints envers les nations ?",
+        "answers": [
+          {
+            "text": "Ils doivent lever une bannière et avertir le peuple de la colère à venir",
+            "correct": true
+          },
+          {
+            "text": "Ils doivent se cacher pour éviter tout contact",
+            "correct": false
+          },
+          {
+            "text": "Ils doivent attendre que d'autres Églises prêchent",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle consolation D&A 136:37-38 offre-t-il concernant le prophète Joseph Smith ?",
+        "answers": [
+          {
+            "text": "Sa mission n'est pas finie; il accomplira encore de grandes choses",
+            "correct": true
+          },
+          {
+            "text": "Il ne servira plus jamais dans l'œuvre",
+            "correct": false
+          },
+          {
+            "text": "Sa voix est totalement perdue",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que demande D&A 136:42 aux saints ?",
+        "answers": [
+          {
+            "text": "Être prudents et surveiller soigneusement leurs actions",
+            "correct": true
+          },
+          {
+            "text": "N'agir qu'en suivant les coutumes de Babylone",
+            "correct": false
+          },
+          {
+            "text": "Abandonner toute vigilance spirituelle",
+            "correct": false
+          }
+        ]
+      }
+    ]
   },
   "1–7 décembre | D&A 137–138": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
+    "jour1": [
+      {
+        "question": "Quel lieu Joseph Smith voit-il dans D&A 137:1-2 ?",
+        "answers": [
+          {
+            "text": "Le royaume céleste, avec la gloire de Dieu",
+            "correct": true
+          },
+          {
+            "text": "Un champ stérile symbole de Babylone",
+            "correct": false
+          },
+          {
+            "text": "Un désert sans lumière",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Qui Joseph voit-il en vision selon D&A 137:5-6 ?",
+        "answers": [
+          {
+            "text": "Son frère Alvin dans le royaume céleste",
+            "correct": true
+          },
+          {
+            "text": "Des anges rebelles chassés",
+            "correct": false
+          },
+          {
+            "text": "Les douze apôtres du Nouveau Testament",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle doctrine D&A 137:7-9 enseigne-t-elle pour le salut des morts ?",
+        "answers": [
+          {
+            "text": "Ceux qui auraient reçu l'alliance s'ils l'avaient connue seront héritiers du royaume",
+            "correct": true
+          },
+          {
+            "text": "Seuls les baptisés dans cette vie peuvent être sauvés",
+            "correct": false
+          },
+          {
+            "text": "Les enfants ne sont pas concernés par le salut",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle assurance D&A 137:10 donne-t-elle aux enfants qui meurent jeunes ?",
+        "answers": [
+          {
+            "text": "Ils sont héritiers du royaume céleste",
+            "correct": true
+          },
+          {
+            "text": "Ils doivent attendre le jugement des hommes",
+            "correct": false
+          },
+          {
+            "text": "Ils restent dans un état neutre",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour2": [
+      {
+        "question": "Quelle scène D&A 138:1-4 décrit-elle avant la vision ?",
+        "answers": [
+          {
+            "text": "Joseph F. Smith méditant les Écritures et réfléchissant à la rédemption des morts",
+            "correct": true
+          },
+          {
+            "text": "Un concile politique des saints",
+            "correct": false
+          },
+          {
+            "text": "Une réunion militaire",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 138:11-12, qui le prophète voit-il dans le monde des esprits ?",
+        "answers": [
+          {
+            "text": "Une vaste assemblée de justes attendant la visite du Sauveur",
+            "correct": true
+          },
+          {
+            "text": "Uniquement les prophètes de l'Ancien Testament",
+            "correct": false
+          },
+          {
+            "text": "Les saints terrestres endormis",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que révèle D&A 138:16-18 au sujet du ministère du Christ après sa mort ?",
+        "answers": [
+          {
+            "text": "Il visita les esprits des justes et proclama la liberté",
+            "correct": true
+          },
+          {
+            "text": "Il resta silencieux jusqu'à la résurrection",
+            "correct": false
+          },
+          {
+            "text": "Il délégua tout à des anges sans apparaître",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel sentiment anime les esprits selon D&A 138:19-21 ?",
+        "answers": [
+          {
+            "text": "Une grande joie à cause de la délivrance annoncée",
+            "correct": true
+          },
+          {
+            "text": "Une peur constante de l'avenir",
+            "correct": false
+          },
+          {
+            "text": "Une indifférence complète",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour3": [
+      {
+        "question": "Qui D&A 138:29-30 désigne-t-il pour enseigner l'Évangile dans le monde des esprits ?",
+        "answers": [
+          {
+            "text": "Les anciens autorisés, envoyés pour prêcher aux prisonniers",
+            "correct": true
+          },
+          {
+            "text": "Les anges seulement, sans participation humaine",
+            "correct": false
+          },
+          {
+            "text": "Les dirigeants civils de la terre",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 138:31-34, quel message est proclamé aux esprits ?",
+        "answers": [
+          {
+            "text": "La foi, la repentance et le baptême pour la rémission des péchés",
+            "correct": true
+          },
+          {
+            "text": "Une simple libération sans conditions",
+            "correct": false
+          },
+          {
+            "text": "Des règles de gouvernement temporel",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que montre D&A 138:36-37 sur la réaction des prophètes passés ?",
+        "answers": [
+          {
+            "text": "Ils se réjouissent et sont prêts à participer à la prédication",
+            "correct": true
+          },
+          {
+            "text": "Ils protestent contre le plan de salut",
+            "correct": false
+          },
+          {
+            "text": "Ils demandent à retourner sur terre immédiatement",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe D&A 138:42-45 enseigne-t-il sur l'héritage des enfants de Dieu ?",
+        "answers": [
+          {
+            "text": "Tous recevront selon leurs œuvres et leurs désirs de suivre le Christ",
+            "correct": true
+          },
+          {
+            "text": "L'héritage est fixé sans tenir compte des actions",
+            "correct": false
+          },
+          {
+            "text": "Seuls les mortels vivants peuvent recevoir des bénédictions",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour4": [
+      {
+        "question": "Comment D&A 138:47-48 relie-t-il l'œuvre pour les morts à Élie ?",
+        "answers": [
+          {
+            "text": "Élie a révélé les clés pour sceller et unir les générations",
+            "correct": true
+          },
+          {
+            "text": "Élie a aboli toute œuvre du temple",
+            "correct": false
+          },
+          {
+            "text": "Élie n'est mentionné que pour les miracles de pluie",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que promet D&A 138:56 aux enfants élus ?",
+        "answers": [
+          {
+            "text": "Ils reçoivent le privilège de venir sur terre à la dernière dispensation",
+            "correct": true
+          },
+          {
+            "text": "Ils sont exemptés de toute responsabilité",
+            "correct": false
+          },
+          {
+            "text": "Ils n'auront pas besoin de l'expiation",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel espoir D&A 138:58-59 donne-t-il concernant la résurrection ?",
+        "answers": [
+          {
+            "text": "Tous ressusciteront et pourront jouir de gloire selon leur fidélité",
+            "correct": true
+          },
+          {
+            "text": "Seuls les prophètes ressusciteront",
+            "correct": false
+          },
+          {
+            "text": "La résurrection est réservée aux justes du millénium",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel engagement D&A 138:60-61 inspire au prophète ?",
+        "answers": [
+          {
+            "text": "Se réjouir dans le Christ et se repentir pour être purifiés",
+            "correct": true
+          },
+          {
+            "text": "Abandonner la prédication aux morts",
+            "correct": false
+          },
+          {
+            "text": "Retarder toute repentance à plus tard",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour5": [
+      {
+        "question": "Quel lien D&A 138 souligne-t-il entre les vivants et les morts ?",
+        "answers": [
+          {
+            "text": "Nous dépendons les uns des autres pour la perfection et les ordonnances",
+            "correct": true
+          },
+          {
+            "text": "Les morts se sauvent sans l'aide des vivants",
+            "correct": false
+          },
+          {
+            "text": "Les vivants n'ont aucune responsabilité envers leurs ancêtres",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment cette section encourage-t-elle l'œuvre du temple ?",
+        "answers": [
+          {
+            "text": "En invitant les saints à sceller les familles et accomplir les ordonnances par procuration",
+            "correct": true
+          },
+          {
+            "text": "En limitant les ordonnances aux réunions dominicales",
+            "correct": false
+          },
+          {
+            "text": "En remplaçant le baptême pour les morts par la prière",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle attitude de foi D&A 138 inspire-t-elle ?",
+        "answers": [
+          {
+            "text": "Espérer avec assurance dans la miséricorde du Christ pour tous les enfants de Dieu",
+            "correct": true
+          },
+          {
+            "text": "Craindre que l'expiation soit limitée",
+            "correct": false
+          },
+          {
+            "text": "Renoncer à toute recherche généalogique",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel résumé D&A 137-138 offre-t-il du plan du salut ?",
+        "answers": [
+          {
+            "text": "Le salut est offert à tous par le Christ, vivants et morts, selon leur acceptation de l'Évangile",
+            "correct": true
+          },
+          {
+            "text": "Seuls ceux qui vivent à la fin des temps peuvent être sauvés",
+            "correct": false
+          },
+          {
+            "text": "Les ordonnances ne sont plus nécessaires",
+            "correct": false
+          }
+        ]
+      }
+    ]
   },
   "8–14 décembre | Noël": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
+    "jour1": [
+      {
+        "question": "Quel signe accompagne la naissance de Jésus selon Luc 2:12 ?",
+        "answers": [
+          {
+            "text": "Un enfant emmailloté et couché dans une crèche",
+            "correct": true
+          },
+          {
+            "text": "Une couronne d'or sur un trône",
+            "correct": false
+          },
+          {
+            "text": "Un rouleau de la loi tenu par Marie",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que chantent les anges aux bergers dans Luc 2:14 ?",
+        "answers": [
+          {
+            "text": "Gloire à Dieu au plus haut des cieux et paix sur la terre",
+            "correct": true
+          },
+          {
+            "text": "Malheur aux puissants",
+            "correct": false
+          },
+          {
+            "text": "Un avertissement de rester à l'écart de Bethléem",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle prophétie d'Ésaïe 7:14 s'accomplit à Noël ?",
+        "answers": [
+          {
+            "text": "La naissance d'Emmanuel d'une vierge",
+            "correct": true
+          },
+          {
+            "text": "La chute de Babylone",
+            "correct": false
+          },
+          {
+            "text": "L'apparition des dix tribus",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment les bergers répondent-ils au message dans Luc 2:15-16 ?",
+        "answers": [
+          {
+            "text": "Ils vont promptement à Bethléem pour voir l'enfant",
+            "correct": true
+          },
+          {
+            "text": "Ils retournent dormir dans les champs",
+            "correct": false
+          },
+          {
+            "text": "Ils attendent un autre signe avant d'agir",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour2": [
+      {
+        "question": "Quels présents les mages offrent-ils selon Matthieu 2:11 ?",
+        "answers": [
+          {
+            "text": "Or, encens et myrrhe",
+            "correct": true
+          },
+          {
+            "text": "Pain, vin et huile",
+            "correct": false
+          },
+          {
+            "text": "Bois, laine et sel",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment les mages sont-ils guidés vers Jésus ?",
+        "answers": [
+          {
+            "text": "Par une étoile qui se lève à l'est",
+            "correct": true
+          },
+          {
+            "text": "Par un rêve de Joseph",
+            "correct": false
+          },
+          {
+            "text": "Par un décret d'Hérode",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle instruction les mages reçoivent-ils ensuite dans Matthieu 2:12 ?",
+        "answers": [
+          {
+            "text": "Retourner dans leur pays par un autre chemin",
+            "correct": true
+          },
+          {
+            "text": "Informer Hérode du lieu exact",
+            "correct": false
+          },
+          {
+            "text": "Rester à Bethléem pour toujours",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que révèle la visite des mages sur la mission du Christ ?",
+        "answers": [
+          {
+            "text": "Il est reconnu comme Roi et Sauveur par les nations",
+            "correct": true
+          },
+          {
+            "text": "Il vient uniquement pour Juda",
+            "correct": false
+          },
+          {
+            "text": "Il refuse tout hommage",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour3": [
+      {
+        "question": "Quel rôle Joseph joue-t-il dans Matthieu 1:20-21 ?",
+        "answers": [
+          {
+            "text": "Recevoir en rêve l'ordre d'épouser Marie et de nommer l'enfant Jésus",
+            "correct": true
+          },
+          {
+            "text": "Diriger une armée contre Hérode",
+            "correct": false
+          },
+          {
+            "text": "Prédire la famine en Égypte",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle signification le nom 'Jésus' porte-t-il ?",
+        "answers": [
+          {
+            "text": "Le Seigneur sauve",
+            "correct": true
+          },
+          {
+            "text": "Prince de guerre",
+            "correct": false
+          },
+          {
+            "text": "Juge des Romains",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Pourquoi la naissance virginale est-elle essentielle selon Matthieu 1:23 ?",
+        "answers": [
+          {
+            "text": "Elle accomplit la prophétie et atteste la divinité du Fils",
+            "correct": true
+          },
+          {
+            "text": "Elle supprime toute responsabilité paternelle",
+            "correct": false
+          },
+          {
+            "text": "Elle rend Jésus citoyen romain",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment Joseph manifeste-t-il sa justice dans Matthieu 1:24-25 ?",
+        "answers": [
+          {
+            "text": "Il obéit promptement au commandement de l'ange",
+            "correct": true
+          },
+          {
+            "text": "Il reporte la décision à plus tard",
+            "correct": false
+          },
+          {
+            "text": "Il demande un signe supplémentaire",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour4": [
+      {
+        "question": "Quelle joie Marie exprime-t-elle dans Luc 1:46-49 ?",
+        "answers": [
+          {
+            "text": "Son âme magnifie le Seigneur pour les grandes choses faites en elle",
+            "correct": true
+          },
+          {
+            "text": "Elle réclame un trône politique",
+            "correct": false
+          },
+          {
+            "text": "Elle se vante de sa propre puissance",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel thème de justice apparaît dans Luc 1:52-53 ?",
+        "answers": [
+          {
+            "text": "Dieu élève les humbles et comble les affamés",
+            "correct": true
+          },
+          {
+            "text": "Dieu renverse les justes et exalte les orgueilleux",
+            "correct": false
+          },
+          {
+            "text": "Dieu ignore les pauvres",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon Luc 1:67-69, que prophétise Zacharie ?",
+        "answers": [
+          {
+            "text": "Dieu a suscité une corne de salut dans la maison de David",
+            "correct": true
+          },
+          {
+            "text": "Jean prendra le trône de Hérode",
+            "correct": false
+          },
+          {
+            "text": "Il n'y aura plus de prophètes",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que souligne Luc 1:76-77 sur la mission de Jean-Baptiste ?",
+        "answers": [
+          {
+            "text": "Préparer le chemin du Seigneur en prêchant la repentance",
+            "correct": true
+          },
+          {
+            "text": "Fonder une nouvelle religion indépendante",
+            "correct": false
+          },
+          {
+            "text": "Remplacer le Messie",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour5": [
+      {
+        "question": "Selon 3 Néphi 1:13-14, que promet le Seigneur à Néphi concernant la naissance du Christ ?",
+        "answers": [
+          {
+            "text": "Le signe donné au peuple s'accomplira cette nuit-là",
+            "correct": true
+          },
+          {
+            "text": "Le signe sera retardé d'une année",
+            "correct": false
+          },
+          {
+            "text": "Le signe n'est que symbolique sans manifestation",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel prodige accompagne la naissance du Christ chez les Néphites selon 3 Néphi 1:15-19 ?",
+        "answers": [
+          {
+            "text": "Une nuit sans obscurité et l'étoile nouvelle apparaît",
+            "correct": true
+          },
+          {
+            "text": "Un tremblement de terre massif",
+            "correct": false
+          },
+          {
+            "text": "Une pluie de feu",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que révèle 3 Néphi 1:22-23 sur la réaction du peuple juste ?",
+        "answers": [
+          {
+            "text": "Ils sont remplis de joie et commencent à prêcher davantage",
+            "correct": true
+          },
+          {
+            "text": "Ils se cachent par crainte",
+            "correct": false
+          },
+          {
+            "text": "Ils oublient immédiatement le signe",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel message central ressort de ces récits de Noël ?",
+        "answers": [
+          {
+            "text": "Le Sauveur vient apporter paix, lumière et accomplissement des alliances",
+            "correct": true
+          },
+          {
+            "text": "Le salut dépend des signes uniquement",
+            "correct": false
+          },
+          {
+            "text": "La naissance de Jésus est un événement réservé aux savants",
+            "correct": false
+          }
+        ]
+      }
+    ]
   },
   "15–21 décembre | Révision": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
+    "jour1": [
+      {
+        "question": "Quelle loi D&A 42 enseigne-t-elle pour bénir les pauvres ?",
+        "answers": [
+          {
+            "text": "La loi de consécration et de l'intendance",
+            "correct": true
+          },
+          {
+            "text": "Une taxe civile obligatoire",
+            "correct": false
+          },
+          {
+            "text": "L'abandon total des biens",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe D&A 76 révèle-t-il sur les royaumes de gloire ?",
+        "answers": [
+          {
+            "text": "Il existe des degrés de gloire selon la fidélité",
+            "correct": true
+          },
+          {
+            "text": "Il n'y a qu'un seul degré de récompense",
+            "correct": false
+          },
+          {
+            "text": "Tous reçoivent la même gloire",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle promesse D&A 84:19-21 associe-t-elle à la prêtrise de Melchisédek ?",
+        "answers": [
+          {
+            "text": "La clé des mystères du royaume et la vision de Dieu",
+            "correct": true
+          },
+          {
+            "text": "Une exemption de service",
+            "correct": false
+          },
+          {
+            "text": "Un pouvoir uniquement temporel",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que rappelle D&A 88:119 concernant les maisons du Seigneur ?",
+        "answers": [
+          {
+            "text": "Organiser une maison d'ordre, prière, jeûne et foi",
+            "correct": true
+          },
+          {
+            "text": "Limiter la prière aux lieux publics",
+            "correct": false
+          },
+          {
+            "text": "Éviter toute étude",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour2": [
+      {
+        "question": "Quel avertissement D&A 93:1 adresse-t-il à tous ?",
+        "answers": [
+          {
+            "text": "Quiconque obéit verra la face de Dieu et saura qu'il est",
+            "correct": true
+          },
+          {
+            "text": "Seuls les prophètes peuvent connaître Dieu",
+            "correct": false
+          },
+          {
+            "text": "La connaissance divine est interdite",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe D&A 101:16 enseigne-t-il sur la confiance ?",
+        "answers": [
+          {
+            "text": "Rester tranquilles et savoir que Dieu veille sur Sion",
+            "correct": true
+          },
+          {
+            "text": "Se reposer uniquement sur la force militaire",
+            "correct": false
+          },
+          {
+            "text": "Abandonner toute espérance",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle instruction D&A 107:27-30 donne-t-elle sur les décisions en conseil ?",
+        "answers": [
+          {
+            "text": "Prendre les décisions à l'unanimité pour refléter l'accord de l'Esprit",
+            "correct": true
+          },
+          {
+            "text": "Décider à la majorité simple",
+            "correct": false
+          },
+          {
+            "text": "Laisser les décisions au plus ancien uniquement",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel espoir D&A 110:11-16 offre-t-il avec les clés restaurées ?",
+        "answers": [
+          {
+            "text": "L'œuvre missionnaire et le scellement des familles peuvent se poursuivre",
+            "correct": true
+          },
+          {
+            "text": "Les clés ne concernent que l'Ancien Testament",
+            "correct": false
+          },
+          {
+            "text": "Les ordonnances sont annulées",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour3": [
+      {
+        "question": "Quel enseignement D&A 121:7-8 donne-t-il sur les afflictions ?",
+        "answers": [
+          {
+            "text": "Elles seront pour ton bien et paraîtront peu de choses",
+            "correct": true
+          },
+          {
+            "text": "Elles n'ont aucun but",
+            "correct": false
+          },
+          {
+            "text": "Elles signifient l'abandon de Dieu",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que rappelle D&A 121:41-42 sur l'exercice de l'autorité ?",
+        "answers": [
+          {
+            "text": "Elle ne peut être maintenue que par persuasion, douceur et amour sincère",
+            "correct": true
+          },
+          {
+            "text": "Elle repose sur la contrainte",
+            "correct": false
+          },
+          {
+            "text": "Elle exige la crainte des subordonnés",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe D&A 122:7-9 souligne-t-il sur la descente du Fils de l'Homme ?",
+        "answers": [
+          {
+            "text": "Le Christ a souffert en descendant sous tout pour nous relever",
+            "correct": true
+          },
+          {
+            "text": "Il a évité toute souffrance",
+            "correct": false
+          },
+          {
+            "text": "Sa souffrance était purement symbolique",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment D&A 124:55 encourage-t-il l'obéissance continue ?",
+        "answers": [
+          {
+            "text": "Terminer les maisons du Seigneur pour que ses ordonnances s'accomplissent",
+            "correct": true
+          },
+          {
+            "text": "Reporter les projets sacrés indéfiniment",
+            "correct": false
+          },
+          {
+            "text": "Prioriser les maisons civiles",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour4": [
+      {
+        "question": "Quel rappel D&A 19:16-18 offre-t-il sur l'expiation ?",
+        "answers": [
+          {
+            "text": "Le Christ souffrit pour que nous ne souffrions pas si nous nous repentons",
+            "correct": true
+          },
+          {
+            "text": "La souffrance du Christ était involontaire",
+            "correct": false
+          },
+          {
+            "text": "Seuls quelques élus bénéficient de l'expiation",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que souligne D&A 20:77-79 dans les prières sacramentelles ?",
+        "answers": [
+          {
+            "text": "Prendre sur nous le nom du Christ, se souvenir de lui et garder ses commandements",
+            "correct": true
+          },
+          {
+            "text": "Proclamer notre perfection",
+            "correct": false
+          },
+          {
+            "text": "Renouveler uniquement les alliances du baptême pour les dirigeants",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe d'étude D&A 88:118-119 enseigne-t-il ?",
+        "answers": [
+          {
+            "text": "Chercher la connaissance par l'étude et la foi",
+            "correct": true
+          },
+          {
+            "text": "Éviter toute instruction profane",
+            "correct": false
+          },
+          {
+            "text": "Dépendre uniquement de révélations spontanées",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle perspective D&A 58:26-27 offre-t-elle sur l'initiative personnelle ?",
+        "answers": [
+          {
+            "text": "Les hommes doivent être anxieux de faire le bien sans être commandés en toutes choses",
+            "correct": true
+          },
+          {
+            "text": "Il faut attendre chaque instruction détaillée",
+            "correct": false
+          },
+          {
+            "text": "L'initiative est contraire à la foi",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour5": [
+      {
+        "question": "Quel objectif global ressort de l'année d'étude de D&A ?",
+        "answers": [
+          {
+            "text": "Comprendre la restauration et suivre le Christ par des alliances",
+            "correct": true
+          },
+          {
+            "text": "Satisfaire la curiosité historique uniquement",
+            "correct": false
+          },
+          {
+            "text": "Remplacer la foi par la philosophie",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel engagement personnel pouvons-nous renouveler ?",
+        "answers": [
+          {
+            "text": "Rechercher la révélation quotidienne et servir dans nos appels",
+            "correct": true
+          },
+          {
+            "text": "Mettre de côté les ordonnances",
+            "correct": false
+          },
+          {
+            "text": "Reporter la repentance",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle espérance D&A offre-t-elle aux familles ?",
+        "answers": [
+          {
+            "text": "Les liens peuvent être scellés pour l'éternité grâce au temple",
+            "correct": true
+          },
+          {
+            "text": "Les familles sont seulement pour la vie mortelle",
+            "correct": false
+          },
+          {
+            "text": "Le salut est individuel sans relation",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle action pratique conclut cette révision ?",
+        "answers": [
+          {
+            "text": "Mettre en œuvre un plan personnel d'étude et de service pour l'année suivante",
+            "correct": true
+          },
+          {
+            "text": "Cesser l'étude des Écritures",
+            "correct": false
+          },
+          {
+            "text": "Ignorer les invitations de l'Esprit",
+            "correct": false
+          }
+        ]
+      }
+    ]
   },
   "22–28 décembre | Révision": {
-    "jour1": [],
-    "jour2": [],
-    "jour3": [],
-    "jour4": [],
-    "jour5": []
+    "jour1": [
+      {
+        "question": "Quels principes D&A 1:17-23 indiquent-ils sur le but des commandements ?",
+        "answers": [
+          {
+            "text": "Appeler tous les habitants à prêter attention car l'Évangile est proclamé aux extrémités de la terre",
+            "correct": true
+          },
+          {
+            "text": "Établir une liste de règles temporaires sans promesse",
+            "correct": false
+          },
+          {
+            "text": "Favoriser uniquement les premiers convertis",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que souligne D&A 10:5 concernant la prière ?",
+        "answers": [
+          {
+            "text": "Prier toujours pour sortir vainqueur",
+            "correct": true
+          },
+          {
+            "text": "Prier uniquement en cas d'urgence",
+            "correct": false
+          },
+          {
+            "text": "Prier seulement en public",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel appel missionnaire D&A 18:10-16 répète-t-il ?",
+        "answers": [
+          {
+            "text": "L'âme a une grande valeur et il faut travailler à déclarer la repentance",
+            "correct": true
+          },
+          {
+            "text": "La mission est réservée aux dirigeants",
+            "correct": false
+          },
+          {
+            "text": "Une seule âme sauvée suffit à arrêter l'œuvre",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que promet D&A 25:13-14 à ceux qui restent fidèles ?",
+        "answers": [
+          {
+            "text": "Une couronne de justice et la joie dans le Saint-Esprit",
+            "correct": true
+          },
+          {
+            "text": "L'absence totale d'épreuves",
+            "correct": false
+          },
+          {
+            "text": "Une position politique élevée",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour2": [
+      {
+        "question": "Quel principe D&A 46:11-12 enseigne-t-il sur les dons spirituels ?",
+        "answers": [
+          {
+            "text": "Ils sont donnés pour le bénéfice des membres de l'Église",
+            "correct": true
+          },
+          {
+            "text": "Ils sont réservés aux dirigeants",
+            "correct": false
+          },
+          {
+            "text": "Ils remplacent les ordonnances",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que rappelle D&A 50:23-24 sur la lumière spirituelle ?",
+        "answers": [
+          {
+            "text": "Tout ce qui est de Dieu invite à la lumière et à la vérité",
+            "correct": true
+          },
+          {
+            "text": "La lumière spirituelle est limitée aux réunions dominicales",
+            "correct": false
+          },
+          {
+            "text": "La vérité vient uniquement de la raison humaine",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Selon D&A 59:9-13, comment sanctifier le sabbat ?",
+        "answers": [
+          {
+            "text": "Offrir des actions de grâce, faire nos délices du jour et cesser nos occupations",
+            "correct": true
+          },
+          {
+            "text": "Multiplier les affaires commerciales",
+            "correct": false
+          },
+          {
+            "text": "Se reposer uniquement physiquement sans adoration",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quelle promesse D&A 64:33-34 donne-t-elle à ceux qui œuvrent avec diligence ?",
+        "answers": [
+          {
+            "text": "Leurs œuvres ne sont pas perdues et le Seigneur réclame le cœur et une volonté bonne",
+            "correct": true
+          },
+          {
+            "text": "Leurs efforts seront vite oubliés",
+            "correct": false
+          },
+          {
+            "text": "Le Seigneur ne s'intéresse qu'aux grands sacrifices",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour3": [
+      {
+        "question": "Quel avertissement D&A 76:31-37 donne-t-il sur la perdition ?",
+        "answers": [
+          {
+            "text": "Rejeter le témoignage du Fils après l'avoir reçu conduit à la perdition",
+            "correct": true
+          },
+          {
+            "text": "La perdition est décidée au hasard",
+            "correct": false
+          },
+          {
+            "text": "Elle ne concerne que les premiers habitants de la terre",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que promet D&A 82:10 au sujet des alliances ?",
+        "answers": [
+          {
+            "text": "Le Seigneur est lié lorsqu'on fait ce qu'il dit",
+            "correct": true
+          },
+          {
+            "text": "Les alliances sont annulées par la grâce seule",
+            "correct": false
+          },
+          {
+            "text": "Les promesses sont sans conditions",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel encouragement D&A 90:24 offre-t-il en temps de difficulté ?",
+        "answers": [
+          {
+            "text": "Chercher le Seigneur et être grandement consolés",
+            "correct": true
+          },
+          {
+            "text": "Se fier uniquement aux bras de la chair",
+            "correct": false
+          },
+          {
+            "text": "Abandonner toute joie",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel principe d'effort D&A 104:78-79 enseigne-t-il ?",
+        "answers": [
+          {
+            "text": "Tout homme doit payer ses dettes et éviter l'esclavage financier",
+            "correct": true
+          },
+          {
+            "text": "Les dettes n'ont aucune importance spirituelle",
+            "correct": false
+          },
+          {
+            "text": "L'Église paiera automatiquement toutes les dettes",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour4": [
+      {
+        "question": "Que recommande D&A 112:10-11 pour recevoir la lumière ?",
+        "answers": [
+          {
+            "text": "Humilier sa personne devant Dieu et être dirigé par sa main",
+            "correct": true
+          },
+          {
+            "text": "Chercher d'abord l'honneur du monde",
+            "correct": false
+          },
+          {
+            "text": "Ignorer les conseils des prophètes",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel secours D&A 121:33-36 promet-il à ceux qui respectent les lois éternelles ?",
+        "answers": [
+          {
+            "text": "Les pouvoirs du ciel sont gouvernés par l'esprit de justice et de vérité",
+            "correct": true
+          },
+          {
+            "text": "Les pouvoirs du ciel peuvent être manipulés par la force",
+            "correct": false
+          },
+          {
+            "text": "Les lois éternelles changent selon les époques",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que rappelle D&A 130:20-21 sur les bénédictions ?",
+        "answers": [
+          {
+            "text": "Elles sont obtenues par obéissance aux lois sur lesquelles elles sont fondées",
+            "correct": true
+          },
+          {
+            "text": "Elles sont accordées sans conditions",
+            "correct": false
+          },
+          {
+            "text": "Elles dépendent du hasard",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel enseignement D&A 131:7-8 donne-t-il sur la nature de l'esprit ?",
+        "answers": [
+          {
+            "text": "L'esprit est une substance plus fine que la matière",
+            "correct": true
+          },
+          {
+            "text": "L'esprit est imaginaire et n'a pas d'existence",
+            "correct": false
+          },
+          {
+            "text": "L'esprit est identique au corps mortel",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "jour5": [
+      {
+        "question": "Quel espoir D&A 138:57-59 offre-t-il pour les ancêtres ?",
+        "answers": [
+          {
+            "text": "Ils peuvent recevoir l'Évangile et être bénis grâce à l'œuvre du temple",
+            "correct": true
+          },
+          {
+            "text": "Ils doivent attendre la fin du monde sans progrès",
+            "correct": false
+          },
+          {
+            "text": "Ils sont exclus des bénédictions du salut",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Que révèle D&A 138 sur la coopération entre dispensations ?",
+        "answers": [
+          {
+            "text": "Les prophètes d'autrefois se réjouissent de participer à l'œuvre des derniers jours",
+            "correct": true
+          },
+          {
+            "text": "Chaque dispensation agit sans lien avec les autres",
+            "correct": false
+          },
+          {
+            "text": "Les dispensations anciennes remplacent la nouvelle",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Quel engagement final pouvons-nous prendre après cette année ?",
+        "answers": [
+          {
+            "text": "Continuer à étudier, servir et partager l'Évangile avec foi",
+            "correct": true
+          },
+          {
+            "text": "Mettre de côté les Écritures jusqu'à l'année suivante",
+            "correct": false
+          },
+          {
+            "text": "Abandonner les efforts missionnaires",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Comment pouvons-nous appliquer D&A 19:23 dans notre vie quotidienne ?",
+        "answers": [
+          {
+            "text": "Apprendre de lui et écouter ses paroles pour avoir la paix",
+            "correct": true
+          },
+          {
+            "text": "Chercher la paix uniquement dans les possessions matérielles",
+            "correct": false
+          },
+          {
+            "text": "Éviter toute réflexion sur l'Évangile",
+            "correct": false
+          }
+        ]
+      }
+    ]
   }
 }
